@@ -1,0 +1,8 @@
+[Xfce Panel]
+Type=X-XFCE-PanelPlugin
+Encoding=UTF-8
+_Name=SmartBookmark
+_Comment=Query websites from the Xfce panel
+Icon=gtk-preferences
+X-XFCE-Module=@INTERNAL_PLUGIN_PATH@/libsmartbookmark.so
+X-XFCE-Unique=false

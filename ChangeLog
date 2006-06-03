@@ -1,0 +1,28 @@
+2006-06-02  Emanuele Rocca  <ema@debian.org>
+0.4.1
+
+* Allow adding more than one instance of the plugin to the panel
+* search_new(): config file reading fixed
+* Autotools files rewritten
+
+2006-05-21  Masse Nicolas  <masse.nicolas@gmail.com> 
+0.4
+
+* Ported to xfce4-panel 4.4 
+* Use autotools 
+
+2006-01-04  Emanuele Rocca  <ema@debian.org>
+0.2
+
+* Add quotes around keyword, so that a multi-keyword search is not handled as a
+multi-search (eg: if Marco Aurelio is supplied as a keyword, the user is not
+looking for "Marco" and "Aurelio", but for "Marco Aurelio", the Roman emperor)
+
+* Useless g_free() removed
+
+* Code cleanup
+
+2005-12-25  Emanuele Rocca  <ema@debian.org>
+0.1
+
+* Initial release

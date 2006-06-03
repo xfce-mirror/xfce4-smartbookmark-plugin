@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2006-06-03 23:51+0100\n"
+"Last-Translator: SZERVÑC Attila <sas@321.hu>\n"
+"Language-Team: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Language: Hungarian\n"
+"X-Poedit-Country: HUNGARY\n"
+
+#: ../panel-plugin/smartbookmark.c:319
+msgid "URL:  "
+msgstr "URL:  "
+
+#: ../panel-plugin/smartbookmark.c:322
+msgid "Label:"
+msgstr "Címke:"
+
+#: ../panel-plugin/smartbookmark.c:325
+msgid "Size:"
+msgstr "Méret:"
+
+#: ../panel-plugin/smartbookmark.c:331
+msgid "Preferences"
+msgstr "Tulajdonságok"
+

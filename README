@@ -13,3 +13,9 @@ Please report bugs (or comments) to Emanuele Rocca <ema@debian.org>
 THANKS
 ------
 Many kudos to Roberto Pariset (intero) and Masse Nicolas
+
+BUILDING FROM SVN
+-----------------
+./autogen.sh
+make
+make install

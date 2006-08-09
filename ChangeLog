@@ -1,3 +1,9 @@
+2006-07-09  Emanuele Rocca  <ema@debian.org>
+0.4.2
+
+* New translations: Hungarian and traditional Chinese
+* Generate bzipped tarballs
+
 2006-06-02  Emanuele Rocca  <ema@debian.org>
 0.4.1
 

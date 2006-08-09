@@ -4,6 +4,9 @@ SUBDIRS = \
 	po \
 	src
 
+AUTOMAKE_OPTIONS = \
+        dist-bzip2
+
 distclean-local:
 		rm -rf *.cache *~ 
 

@@ -58,6 +58,8 @@ typedef struct {
     gchar *label_text;
     gchar *url;
     gint size;
+    
+    gboolean hide_label;
 
     /* options dialog */
     GtkWidget *opt_dialog;
@@ -65,6 +67,7 @@ typedef struct {
     GtkWidget *label_entry;
     GtkWidget *url_entry;
     GtkWidget *size_spinner;
+    GtkWidget *hide_check;
 } t_search;
 
 //register the plugin
@@ -97,7 +100,9 @@ static void update_search(t_search *search) {
     gtk_widget_hide(search->label);
     gtk_label_set_text(GTK_LABEL(search->label), search->label_text);
     gtk_widget_show(GTK_WIDGET(search->ebox));
-    gtk_widget_show(search->label);
+    if (!search->hide_label) {
+        gtk_widget_show(search->label);
+    }
 }
 
 /* apply the new values to: url, label_text, size */
@@ -107,6 +112,7 @@ static void search_apply_options_cb(t_search *search)
     search->url = g_strdup(gtk_entry_get_text(GTK_ENTRY(search->url_entry)));
     search->label_text = g_strdup(gtk_entry_get_text(GTK_ENTRY(search->label_entry)));
     search->size = (gint)(gtk_spin_button_get_value(GTK_SPIN_BUTTON(search->size_spinner)));
+    search->hide_label = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(search->hide_check));
     gtk_entry_set_width_chars(GTK_ENTRY(search->entry), search->size);
     update_search(search);
 }
@@ -194,6 +200,7 @@ static t_search *search_new(XfcePanelPlugin *plugin)
     search->url = "http://bugs.debian.org/";
     search->label_text = "BTS";
     search->size = 5;
+    search->hide_label = FALSE;
     /* read config file options */
     filename = xfce_panel_plugin_save_location(plugin, TRUE);
     search_read_config(search, filename);
@@ -212,6 +219,11 @@ static t_search *search_new(XfcePanelPlugin *plugin)
     gtk_container_add( GTK_CONTAINER(plugin), search->ebox);
     xfce_panel_plugin_add_action_widget(plugin, search->ebox);
     gtk_widget_show_all(search->ebox);
+
+    if (search->hide_label) {
+        gtk_widget_hide(search->label);
+    }
+
     /*
     filename = xfce_panel_plugin_save_location(plugin, TRUE);
     search_read_config(search, filename);
@@ -260,6 +272,7 @@ static void search_read_config(t_search *search, const gchar* filename)
         search->url = g_strdup(xfce_rc_read_entry(rcfile,"url","http://bugs.debian.org/"));
         search->label_text = g_strdup(xfce_rc_read_entry(rcfile,"value","DBS"));
         search->size = xfce_rc_read_int_entry(rcfile, "size", 5);
+        search->hide_label = xfce_rc_read_bool_entry(rcfile, "hidelabel", FALSE);
     }
 }
 
@@ -274,6 +287,7 @@ static void search_write_config(XfcePanelPlugin *plugin, t_search *search)
         xfce_rc_write_entry(rcfile, "url", search->url);
         xfce_rc_write_entry(rcfile, "value", search->label_text);
         xfce_rc_write_int_entry(rcfile, "size", search->size);
+        xfce_rc_write_bool_entry(rcfile, "hidelabel", search->hide_label);
         xfce_rc_flush(rcfile);
         xfce_rc_close(rcfile);
     }   
@@ -281,14 +295,15 @@ static void search_write_config(XfcePanelPlugin *plugin, t_search *search)
 
 static void search_set_size(XfcePanelPlugin *plugin,gint size, t_search *search)
 {
+    /* 
     g_print("Not Unimplemented yet : search_set_size");
-    /* do the resize of entry :) */
+    do the resize of entry :) */
 };
 
 /* options dialog */
 static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
 {
-    GtkWidget *hbox, *vbox;
+    GtkWidget *hbox, *vbox, *header;
     xfce_panel_plugin_block_menu(plugin);
     GtkWidget *urllabel, *textlabel, *sizelabel;
     DBG ("search_create_options");
@@ -296,6 +311,17 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
                                              NULL, GTK_DIALOG_NO_SEPARATOR,
                                              GTK_STOCK_CLOSE, GTK_RESPONSE_OK,
                                              NULL);
+    
+    gtk_container_set_border_width(GTK_CONTAINER (search->opt_dialog), 2);
+    
+    /* header */
+    header = xfce_create_header(NULL, _("Smartbookmark"));
+    gtk_widget_set_size_request(GTK_BIN(header)->child, 200, 32);
+    gtk_container_set_border_width(GTK_CONTAINER(header), 6);
+    gtk_widget_show(header);
+    gtk_box_pack_start(GTK_BOX(GTK_DIALOG(search->opt_dialog)->vbox), header,
+                        FALSE, TRUE, 0);
+
     vbox = gtk_vbox_new(FALSE, 0);
     gtk_widget_show(vbox);
     gtk_container_add(GTK_CONTAINER(GTK_DIALOG(search->opt_dialog)->vbox), vbox);
@@ -331,6 +357,12 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
     gtk_box_pack_start(GTK_BOX(hbox), search->size_spinner, FALSE, FALSE, 0);
     gtk_widget_show(search->size_spinner);
 
+    /* Hide label option */
+    search->hide_check = gtk_check_button_new_with_label(_("Hide label"));
+    gtk_toggle_button_set_active(search->hide_check, search->hide_label);
+    gtk_box_pack_start(GTK_BOX(hbox), search->hide_check, FALSE, FALSE, 5);
+    gtk_widget_show(search->hide_check);
+
     DBG ("Creating second hbox");
     hbox = gtk_hbox_new(FALSE, 0);
     gtk_widget_show(hbox);
@@ -342,7 +374,7 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
     gtk_box_pack_start(GTK_BOX(hbox), urllabel, FALSE, FALSE, 5);
     /* url entry */
     search->url_entry = gtk_entry_new();
-    gtk_entry_set_width_chars(GTK_ENTRY(search->url_entry), 32);
+    gtk_entry_set_width_chars(GTK_ENTRY(search->url_entry), 42);
     gtk_widget_show(search->url_entry);
     /* url field */
     if(search->url!=NULL)

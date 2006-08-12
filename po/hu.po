@@ -1,7 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-08-12 15:15+0200\n"
 "PO-Revision-Date: 2006-06-03 23:51+0100\n"
 "Last-Translator: SZERVÑC Attila <sas@321.hu>\n"
 "Language-Team: hu\n"
@@ -12,19 +13,31 @@ msgstr ""
 "X-Poedit-Language: Hungarian\n"
 "X-Poedit-Country: HUNGARY\n"
 
-#: ../panel-plugin/smartbookmark.c:319
-msgid "URL:  "
-msgstr "URL:  "
-
-#: ../panel-plugin/smartbookmark.c:322
-msgid "Label:"
-msgstr "Címke:"
-
-#: ../panel-plugin/smartbookmark.c:325
-msgid "Size:"
-msgstr "Méret:"
-
-#: ../panel-plugin/smartbookmark.c:331
+#: ../src/smartbookmark.c:310
 msgid "Preferences"
 msgstr "Tulajdonságok"
 
+#. header
+#: ../src/smartbookmark.c:318
+msgid "Smartbookmark"
+msgstr ""
+
+#. text label
+#: ../src/smartbookmark.c:335
+msgid "Label:"
+msgstr "Címke:"
+
+#. size label
+#: ../src/smartbookmark.c:350
+msgid "Size:"
+msgstr "Méret:"
+
+#. Hide label option
+#: ../src/smartbookmark.c:361
+msgid "Hide label"
+msgstr ""
+
+#. url label
+#: ../src/smartbookmark.c:371
+msgid "URL:  "
+msgstr "URL:  "

@@ -359,7 +359,8 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
 
     /* Hide label option */
     search->hide_check = gtk_check_button_new_with_label(_("Hide label"));
-    gtk_toggle_button_set_active(search->hide_check, search->hide_label);
+    gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(search->hide_check), 
+                                 search->hide_label);
     gtk_box_pack_start(GTK_BOX(hbox), search->hide_check, FALSE, FALSE, 5);
     gtk_widget_show(search->hide_check);
 

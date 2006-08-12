@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-11 22:51+0200\n"
+"POT-Creation-Date: 2006-08-12 15:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,18 +16,31 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../panel-plugin/smartbookmark.c:319
-msgid "URL:  "
+#: ../src/smartbookmark.c:310
+msgid "Preferences"
 msgstr ""
 
-#: ../panel-plugin/smartbookmark.c:322
+#. header
+#: ../src/smartbookmark.c:318
+msgid "Smartbookmark"
+msgstr ""
+
+#. text label
+#: ../src/smartbookmark.c:335
 msgid "Label:"
 msgstr ""
 
-#: ../panel-plugin/smartbookmark.c:325
+#. size label
+#: ../src/smartbookmark.c:350
 msgid "Size:"
 msgstr ""
 
-#: ../panel-plugin/smartbookmark.c:331
-msgid "Preferences"
+#. Hide label option
+#: ../src/smartbookmark.c:361
+msgid "Hide label"
+msgstr ""
+
+#. url label
+#: ../src/smartbookmark.c:371
+msgid "URL:  "
 msgstr ""

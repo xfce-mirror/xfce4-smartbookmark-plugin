@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.4.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-06-01 12:42+0200\n"
+"POT-Creation-Date: 2006-08-12 15:15+0200\n"
 "PO-Revision-Date: 2006-06-01 13:00+0200\n"
 "Last-Translator:  Yves-Alexis Perez <corsac@corsac.net>\n"
 "Language-Team: French <traduc@traduc.org>\n"
@@ -15,21 +15,31 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/smartbookmark.c:295
+#: ../src/smartbookmark.c:310
 msgid "Preferences"
 msgstr "Préférences"
 
+#. header
+#: ../src/smartbookmark.c:318
+msgid "Smartbookmark"
+msgstr ""
+
 #. text label
-#: src/smartbookmark.c:309
+#: ../src/smartbookmark.c:335
 msgid "Label:"
 msgstr "Nom:"
 
 #. size label
-#: src/smartbookmark.c:324
+#: ../src/smartbookmark.c:350
 msgid "Size:"
 msgstr "Taille:"
 
+#. Hide label option
+#: ../src/smartbookmark.c:361
+msgid "Hide label"
+msgstr ""
+
 #. url label
-#: src/smartbookmark.c:339
+#: ../src/smartbookmark.c:371
 msgid "URL:  "
 msgstr "URL:  "

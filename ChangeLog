@@ -1,6 +1,8 @@
-2006-07-09  Emanuele Rocca  <ema@debian.org>
+2006-08-12  Emanuele Rocca  <ema@debian.org>
 0.4.2
 
+* "Hide label" option added. Patch by James Westby <jw+debian@jameswestby.net>
+* Header added to the Properties dialog
 * New translations: Hungarian and traditional Chinese
 * Generate bzipped tarballs
 

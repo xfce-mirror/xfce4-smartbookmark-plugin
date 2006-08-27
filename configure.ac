@@ -20,7 +20,7 @@ AC_PROG_LIBTOOL()
 AC_PROG_INTLTOOL()
 
 dnl Check for i18n support
-XDT_I18N([hu it fr zh_TW])
+XDT_I18N([cs hu it fr zh_TW])
 
 dnl Check for required packages
 XDT_CHECK_LIBX11_REQUIRE()

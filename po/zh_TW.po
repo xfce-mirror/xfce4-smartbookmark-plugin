@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: xfce4-smartbookmark-plugin 0.4.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-08-12 15:15+0200\n"
-"PO-Revision-Date: 2006-07-28 23:27+0800\n"
+"PO-Revision-Date: 2006-09-06 18:42+0800\n"
 "Last-Translator: Hydonsingore Cia <hydonsingore@educities.edu.tw>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgstr "偏好設定"
 #. header
 #: ../src/smartbookmark.c:318
 msgid "Smartbookmark"
-msgstr ""
+msgstr "Smartbookmark"
 
 #. text label
 #: ../src/smartbookmark.c:335
@@ -38,7 +38,7 @@ msgstr "大小:"
 #. Hide label option
 #: ../src/smartbookmark.c:361
 msgid "Hide label"
-msgstr ""
+msgstr "隱藏標籤"
 
 #. url label
 #: ../src/smartbookmark.c:371

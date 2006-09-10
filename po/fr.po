@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.4.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-12 15:15+0200\n"
+"POT-Creation-Date: 2006-09-10 21:29+0200\n"
 "PO-Revision-Date: 2006-08-19 18:41+0100\n"
 "Last-Translator: Maximilian Schleiss <maxschleiss@bluewin.ch>\n"
 "Language-Team: French <xfce-i18n@xfce.org>\n"
@@ -40,7 +40,6 @@ msgid "Hide label"
 msgstr "Cacher le label"
 
 #. url label
-#: ../src/smartbookmark.c:371
+#: ../src/smartbookmark.c:372
 msgid "URL:  "
 msgstr "URL :  "
-

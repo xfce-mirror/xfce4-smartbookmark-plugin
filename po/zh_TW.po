@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-smartbookmark-plugin 0.4.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-12 15:15+0200\n"
+"POT-Creation-Date: 2006-09-10 21:29+0200\n"
 "PO-Revision-Date: 2006-09-06 18:42+0800\n"
 "Last-Translator: Hydonsingore Cia <hydonsingore@educities.edu.tw>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
@@ -41,6 +41,6 @@ msgid "Hide label"
 msgstr "隱藏標籤"
 
 #. url label
-#: ../src/smartbookmark.c:371
+#: ../src/smartbookmark.c:372
 msgid "URL:  "
 msgstr "URL:  "

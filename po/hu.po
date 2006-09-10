@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-12 15:15+0200\n"
+"POT-Creation-Date: 2006-09-10 21:29+0200\n"
 "PO-Revision-Date: 2006-08-12 15:56+0100\n"
 "Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
 "Language-Team: hu\n"
@@ -38,7 +38,6 @@ msgid "Hide label"
 msgstr "Címke rejtése"
 
 #. url label
-#: ../src/smartbookmark.c:371
+#: ../src/smartbookmark.c:372
 msgid "URL:  "
 msgstr "URL:  "
-

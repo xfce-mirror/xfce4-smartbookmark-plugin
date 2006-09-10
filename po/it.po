@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.4.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-12 15:15+0200\n"
+"POT-Creation-Date: 2006-09-10 21:29+0200\n"
 "PO-Revision-Date: 2006-06-01 13:00+0200\n"
 "Last-Translator:  Emanuele Rocca <ema@debian.org>\n"
 "Language-Team: Italian Translation Project <tp@lists.linux.it>\n"
@@ -40,6 +40,6 @@ msgid "Hide label"
 msgstr "Nascondi testo"
 
 #. url label
-#: ../src/smartbookmark.c:371
+#: ../src/smartbookmark.c:372
 msgid "URL:  "
 msgstr "URL:  "

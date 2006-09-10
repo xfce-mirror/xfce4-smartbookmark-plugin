@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-12 15:15+0200\n"
+"POT-Creation-Date: 2006-09-10 21:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,6 +41,6 @@ msgid "Hide label"
 msgstr ""
 
 #. url label
-#: ../src/smartbookmark.c:371
+#: ../src/smartbookmark.c:372
 msgid "URL:  "
 msgstr ""

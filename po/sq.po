@@ -1,11 +1,10 @@
-# translation of sq.po to Albanian
-# Besnik Bleta <besnik@programeshqip.org>, 2007.
 # Albanian translation of xfce4-smartbookmark-plugin package
 # Copyright (C) 2006
 # This file is distributed under the same license as the xfce4-smartbookmark-plugin package.
+# Besnik Bleta <besnik@programeshqip.org>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: sq\n"
+"Project-Id-Version: 0.4.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-09-10 21:29+0200\n"
 "PO-Revision-Date: 2007-01-30 21:22+0200\n"

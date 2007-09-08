@@ -1,0 +1,45 @@
+# Brazilian Portuguese translations for xfce4-smartbookmark-plugin package.
+# Copyright (C) THE xfce4-smartbookmark-plugin'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the xfce4-smartbookmark-plugin package.
+# Vladimir Melo <vladimirmelo@foresight.org>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce4-smartbook-plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-09-10 21:29+0200\n"
+"PO-Revision-Date: 2007-09-04 13:24+0300\n"
+"Last-Translator: Vladimir Melo <vladimirmelo@foresightlinux.org>\n"
+"Language-Team: Brazilian Portuguese <ldp-br@bazar2.conectiva.com.br>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/smartbookmark.c:310
+msgid "Preferences"
+msgstr "Preferências"
+
+#. header
+#: ../src/smartbookmark.c:318
+msgid "Smartbookmark"
+msgstr "Smartbookmark"
+
+#. text label
+#: ../src/smartbookmark.c:335
+msgid "Label:"
+msgstr "Rótulo:"
+
+#. size label
+#: ../src/smartbookmark.c:350
+msgid "Size:"
+msgstr "Tamanho:"
+
+#. Hide label option
+#: ../src/smartbookmark.c:361
+msgid "Hide label"
+msgstr "Ocultar rótulo"
+
+#. url label
+#: ../src/smartbookmark.c:372
+msgid "URL:  "
+msgstr "URL:  "

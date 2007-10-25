@@ -6,7 +6,7 @@ m4_define([smartbookmark_version],
     [smartbookmark_version_major.smartbookmark_version_minor.smartbookmark_version_micro])
 
 AC_COPYRIGHT([Copyright (c) 2006 by Emanuele Rocca <ema@debian.org>])
-AC_INIT([xfce4-smartbookmark-plugin], [smartbookmark_version()], [ema@debian.org])
+AC_INIT([xfce4-smartbookmark-plugin], [smartbookmark_version], [ema@debian.org])
 
 dnl Initialize automake
 AM_INIT_AUTOMAKE([AC_PACKAGE_TARNAME()], [AC_PACKAGE_VERSION()])

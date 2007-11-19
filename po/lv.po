@@ -1,0 +1,46 @@
+# Latvian translation of xfce4-smartbookmark-plugin package
+# Copyright (C) 2006
+# This file is distributed under the same license as the xfce4-smartbookmark-plugin
+# Rihards Prieditis <rprieditis@inbox.lv>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce4-smartbookmark-plugin 0.4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-09-10 21:29+0200\n"
+"PO-Revision-Date: 2007-11-17 00:57+0300\n"
+"Last-Translator: Rihards Priedītis <rprieditis@inbox.lv>\n"
+"Language-Team: Latvian <rprieditis@inbox.lv>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/smartbookmark.c:310
+msgid "Preferences"
+msgstr "Uzstādījumi"
+
+#. header
+#: ../src/smartbookmark.c:318
+msgid "Smartbookmark"
+msgstr "Viedāsgrāmatzīmes"
+
+#. text label
+#: ../src/smartbookmark.c:335
+msgid "Label:"
+msgstr "Etiķete:"
+
+#. size label
+#: ../src/smartbookmark.c:350
+msgid "Size:"
+msgstr "Izmērs:"
+
+#. Hide label option
+#: ../src/smartbookmark.c:361
+msgid "Hide label"
+msgstr "Slēpt etiķeti"
+
+#. url label
+#: ../src/smartbookmark.c:372
+msgid "URL:  "
+msgstr "URL:  "
+

@@ -1,0 +1,54 @@
+# Ukrainian translation of xfce4-smartbookmark-plugin.
+# Copyright (C) 2008 Dmitry Nikitin
+# This file is distributed under the same license as the xfce4-smartbookmark-plugin package.
+#
+# Dmitry Nikitin <luckas_fb@mail.ru>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce4-smartbookmark-plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-14 09:51+0000\n"
+"PO-Revision-Date: 2008-07-09 14:18+0300\n"
+"Last-Translator: Dmitry Nikitin <luckas_fb@mail.ru>\n"
+"Language-Team: Ukrainian <xfce4-dev@xfce.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../src/smartbookmark.c:310
+msgid "Preferences"
+msgstr "Властивості"
+
+#. header
+#: ../src/smartbookmark.c:318
+msgid "Smartbookmark"
+msgstr "Кмітливі закладки"
+
+#. text label
+#: ../src/smartbookmark.c:335
+msgid "Label:"
+msgstr "Мітка:"
+
+#. size label
+#: ../src/smartbookmark.c:350
+msgid "Size:"
+msgstr "Розмір:"
+
+#. Hide label option
+#: ../src/smartbookmark.c:361
+msgid "Hide label"
+msgstr "Ховати мітку"
+
+#. url label
+#: ../src/smartbookmark.c:372
+msgid "URL:  "
+msgstr "Посилання URL:  "
+
+#: ../src/smartbookmark.desktop.in.in.h:1
+msgid "Query websites from the Xfce panel"
+msgstr "Звернення до веб-сайтів з панелі Xfce"
+
+#: ../src/smartbookmark.desktop.in.in.h:2
+msgid "SmartBookmark"
+msgstr "Кмітливі закладки"

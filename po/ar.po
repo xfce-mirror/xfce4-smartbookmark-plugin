@@ -1,0 +1,42 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-09-10 21:29+0200\n"
+"PO-Revision-Date: 2008-07-15 23:41+0200\n"
+"Last-Translator: Mohamed Magdy <mohamedmk@gmail.com>\n"
+"Language-Team: Arabeyes <doc@arabeyes.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Arabic\n"
+
+#: ../src/smartbookmark.c:310
+msgid "Preferences"
+msgstr ""
+
+#. header
+#: ../src/smartbookmark.c:318
+msgid "Smartbookmark"
+msgstr ""
+
+#. text label
+#: ../src/smartbookmark.c:335
+msgid "Label:"
+msgstr ""
+
+#. size label
+#: ../src/smartbookmark.c:350
+msgid "Size:"
+msgstr ""
+
+#. Hide label option
+#: ../src/smartbookmark.c:361
+msgid "Hide label"
+msgstr ""
+
+#. url label
+#: ../src/smartbookmark.c:372
+msgid "URL:  "
+msgstr ""
+

@@ -39,4 +39,3 @@ msgstr ""
 #: ../src/smartbookmark.c:372
 msgid "URL:  "
 msgstr ""
-

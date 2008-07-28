@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-smartbookmark-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-09-10 21:29+0200\n"
+"POT-Creation-Date: 2008-07-27 21:21-0400\n"
 "PO-Revision-Date: 2007-10-27 16:38+0500\n"
 "Last-Translator: Muhammad Ali Makki <makk.ma@gmail.com>\n"
 "Language-Team: Urdu <makki.ma@gmail.com>\n"
@@ -47,3 +47,11 @@ msgstr "لیبل چھپائیں"
 msgid "URL:  "
 msgstr "URL:  "
 
+#: ../src/smartbookmark.desktop.in.in.h:1
+msgid "Query websites from the Xfce panel"
+msgstr ""
+
+#: ../src/smartbookmark.desktop.in.in.h:2
+#, fuzzy
+msgid "SmartBookmark"
+msgstr "Smartbookmark"

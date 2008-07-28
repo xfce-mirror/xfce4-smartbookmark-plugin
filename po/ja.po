@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-smartbookmart-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-09-10 21:29+0200\n"
+"POT-Creation-Date: 2008-07-27 21:20-0400\n"
 "PO-Revision-Date: 2008-04-09 20:35+0900\n"
 "Last-Translator: Nobuhiro Iwamatsu <iwamatsu@nigauri.org>\n"
 "Language-Team: Japanese <xfce-i18n@xfce.org>\n"
@@ -45,3 +45,12 @@ msgstr "ラベルを隠す"
 #: ../src/smartbookmark.c:372
 msgid "URL:  "
 msgstr "URL:  "
+
+#: ../src/smartbookmark.desktop.in.in.h:1
+msgid "Query websites from the Xfce panel"
+msgstr ""
+
+#: ../src/smartbookmark.desktop.in.in.h:2
+#, fuzzy
+msgid "SmartBookmark"
+msgstr "Smartbookmark"

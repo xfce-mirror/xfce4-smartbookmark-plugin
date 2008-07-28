@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.4.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-09-10 21:29+0200\n"
+"POT-Creation-Date: 2008-07-27 21:20-0400\n"
 "PO-Revision-Date: 2006-08-19 18:41+0100\n"
 "Last-Translator: Maximilian Schleiss <maximilian@xfce.org>\n"
 "Language-Team: French <xfce-i18n@xfce.org>\n"
@@ -43,3 +43,12 @@ msgstr "Cacher le label"
 #: ../src/smartbookmark.c:372
 msgid "URL:  "
 msgstr "URL :  "
+
+#: ../src/smartbookmark.desktop.in.in.h:1
+msgid "Query websites from the Xfce panel"
+msgstr ""
+
+#: ../src/smartbookmark.desktop.in.in.h:2
+#, fuzzy
+msgid "SmartBookmark"
+msgstr "Smartbookmark"

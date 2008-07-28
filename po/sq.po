@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.4.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-09-10 21:29+0200\n"
+"POT-Creation-Date: 2008-07-27 21:21-0400\n"
 "PO-Revision-Date: 2007-01-30 21:22+0200\n"
 "Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: Albanian <translation-team-sq@lists.sourceforge.net>\n"
@@ -44,3 +44,11 @@ msgstr "Fshih etiketë"
 msgid "URL:  "
 msgstr "URL:  "
 
+#: ../src/smartbookmark.desktop.in.in.h:1
+msgid "Query websites from the Xfce panel"
+msgstr ""
+
+#: ../src/smartbookmark.desktop.in.in.h:2
+#, fuzzy
+msgid "SmartBookmark"
+msgstr "Faqerojtës të mençur"

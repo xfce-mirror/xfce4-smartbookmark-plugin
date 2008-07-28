@@ -2,14 +2,15 @@
 # Copyright (C) THE xfce4-smartbookmark-plugin'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the xfce4-smartbookmark-plugin package.
 # Vladimir Melo <vladimirmelo@foresight.org>, 2007.
+# Og Maciel <ogmaciel@gnome.org>, 2008.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-smartbook-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-09-10 21:29+0200\n"
-"PO-Revision-Date: 2007-09-04 13:24+0300\n"
-"Last-Translator: Vladimir Melo <vladimirmelo@foresightlinux.org>\n"
+"POT-Creation-Date: 2008-07-27 21:21-0400\n"
+"PO-Revision-Date: 2008-07-27 21:25-0500\n"
+"Last-Translator: Og Maciel <ogmaciel@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar2.conectiva.com.br>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,7 +23,7 @@ msgstr "Preferências"
 #. header
 #: ../src/smartbookmark.c:318
 msgid "Smartbookmark"
-msgstr "Smartbookmark"
+msgstr "FavoritoInteligente"
 
 #. text label
 #: ../src/smartbookmark.c:335
@@ -43,3 +44,12 @@ msgstr "Ocultar rótulo"
 #: ../src/smartbookmark.c:372
 msgid "URL:  "
 msgstr "URL:  "
+
+#: ../src/smartbookmark.desktop.in.in.h:1
+msgid "Query websites from the Xfce panel"
+msgstr "Pesquise sites de web pelo painel do Xfce"
+
+#: ../src/smartbookmark.desktop.in.in.h:2
+msgid "SmartBookmark"
+msgstr "FavoritoInteligente"
+

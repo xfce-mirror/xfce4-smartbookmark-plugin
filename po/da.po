@@ -5,7 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-smartbookmark-plugin\n"
-"POT-Creation-Date: 2006-09-10 21:29+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-27 21:20-0400\n"
 "PO-Revision-Date: 2008-05-17 15:16+0100\n"
 "Last-Translator: Jens Hyllegaard <jens.hyllegaard@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -42,3 +43,11 @@ msgstr "Skjul mærkat"
 msgid "URL:  "
 msgstr "URL:  "
 
+#: ../src/smartbookmark.desktop.in.in.h:1
+msgid "Query websites from the Xfce panel"
+msgstr ""
+
+#: ../src/smartbookmark.desktop.in.in.h:2
+#, fuzzy
+msgid "SmartBookmark"
+msgstr "Smart-bogmærke"

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-27 21:20-0400\n"
-"PO-Revision-Date: 2006-08-12 15:56+0100\n"
+"PO-Revision-Date: 2008-09-01 05:15+0100\n"
 "Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
 "Language-Team: hu\n"
 "MIME-Version: 1.0\n"
@@ -44,9 +44,9 @@ msgstr "URL:  "
 
 #: ../src/smartbookmark.desktop.in.in.h:1
 msgid "Query websites from the Xfce panel"
-msgstr ""
+msgstr "Weblapokat kérdez le az Xfce panelből"
 
 #: ../src/smartbookmark.desktop.in.in.h:2
-#, fuzzy
 msgid "SmartBookmark"
-msgstr "Okos könyvjelző"
+msgstr "Okos-Könyvjelző"
+

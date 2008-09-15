@@ -53,7 +53,6 @@ msgid "Query websites from the Xfce panel"
 msgstr "Galdetu webguneak Xfce paneletik"
 
 #: ../src/smartbookmark.desktop.in.in.h:2
-#, fuzzy
 msgid "SmartBookmark"
 msgstr "Smartbookmark"
 

@@ -2,17 +2,21 @@
 # Copyright (C) 2007 THE xfce4-smartbookmark-plugin'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the xfce4-smartbookmark-plugin package.
 # Jens Hyllegaard <jens.hyllegaard@gmail.com>, 2007.
+# Per Kongstad <p_kongstad@op.pl>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-smartbookmark-plugin\n"
+"Project-Id-Version: xfce4-smartbookmark-plugin 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-27 21:20-0400\n"
-"PO-Revision-Date: 2008-05-17 15:16+0100\n"
-"Last-Translator: Jens Hyllegaard <jens.hyllegaard@gmail.com>\n"
+"PO-Revision-Date: 2008-09-30 12:22+0100\n"
+"Last-Translator: Per Kongstad <p_kongstad@op.pl>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Danish\n"
+"X-Poedit-Country: DENMARK\n"
+"X-Poedit-SourceCharset: utf-8\n"
 
 #: ../src/smartbookmark.c:310
 msgid "Preferences"
@@ -45,9 +49,9 @@ msgstr "URL:  "
 
 #: ../src/smartbookmark.desktop.in.in.h:1
 msgid "Query websites from the Xfce panel"
-msgstr ""
+msgstr "Spørg netsteder fra Xfce-panelet"
 
 #: ../src/smartbookmark.desktop.in.in.h:2
-#, fuzzy
 msgid "SmartBookmark"
 msgstr "Smart-bogmærke"
+

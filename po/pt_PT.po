@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xfce4-smartbookmark-plugin\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-27 21:21-0400\n"
-"PO-Revision-Date: 2007-06-30 18:32+0100\n"
+"PO-Revision-Date: 2008-09-13 19:13+0100\n"
 "Last-Translator: Nuno Miguel <nunis@netcabo.pt>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -46,9 +46,9 @@ msgstr "URL:"
 
 #: ../src/smartbookmark.desktop.in.in.h:1
 msgid "Query websites from the Xfce panel"
-msgstr ""
+msgstr "Pesquise sites da web a partir do painel do Xfce"
 
 #: ../src/smartbookmark.desktop.in.in.h:2
-#, fuzzy
 msgid "SmartBookmark"
-msgstr "Smartbookmark"
+msgstr "Marcador Inteligente"
+

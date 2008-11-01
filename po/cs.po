@@ -1,14 +1,14 @@
 # Czech translations for xfce4-smartbookmark-plugin package.
 # Copyright (C) 2006 THE xfce4-smartbookmark-plugin'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the xfce4-smartbookmark-plugin package.
-# Michal Várady <miko.vaji@gmail.com>, 2006.
+# Michal Várady <miko.vaji@gmail.com>, 2006-2008.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-smartbookmark-plugin 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-27 21:19-0400\n"
-"PO-Revision-Date: 2006-08-27 09:36+0100\n"
+"PO-Revision-Date: 2008-11-01 23:35+0100\n"
 "Last-Translator: Michal Várady <miko.vaji@gmail.com>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -47,9 +47,9 @@ msgstr "Adresa URL:"
 
 #: ../src/smartbookmark.desktop.in.in.h:1
 msgid "Query websites from the Xfce panel"
-msgstr ""
+msgstr "Zasílá dotazy na webové stránky z panelu Xfce"
 
 #: ../src/smartbookmark.desktop.in.in.h:2
-#, fuzzy
 msgid "SmartBookmark"
 msgstr "Chytré záložky"
+

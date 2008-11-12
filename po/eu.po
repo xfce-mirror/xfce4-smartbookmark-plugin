@@ -10,14 +10,15 @@ msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-27 21:20-0400\n"
-"PO-Revision-Date: 2008-09-11 22:14+0200\n"
+"PO-Revision-Date: 2008-11-09 15:42+0200\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: Euskara <debian-l10n-basque@lists.debian.org>\n"
+"Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 1.2.0\n"
 
 #: ../src/smartbookmark.c:310
 msgid "Preferences"
@@ -26,7 +27,7 @@ msgstr "Hobespenak"
 #. header
 #: ../src/smartbookmark.c:318
 msgid "Smartbookmark"
-msgstr "Smartbookmark"
+msgstr "Lastermarka-azkarrak"
 
 #. text label
 #: ../src/smartbookmark.c:335
@@ -54,5 +55,4 @@ msgstr "Galdetu webguneak Xfce paneletik"
 
 #: ../src/smartbookmark.desktop.in.in.h:2
 msgid "SmartBookmark"
-msgstr "Smartbookmark"
-
+msgstr "Lastermarka-azkarrak"

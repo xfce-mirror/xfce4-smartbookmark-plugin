@@ -22,7 +22,7 @@ msgstr "تەڭشەكلەر"
 #. header
 #: ../src/smartbookmark.c:318
 msgid "Smartbookmark"
-msgstr ""
+msgstr "Smartbookmark"
 
 #. text label
 #: ../src/smartbookmark.c:335
@@ -37,7 +37,7 @@ msgstr "چوڭلۇقى:"
 #. Hide label option
 #: ../src/smartbookmark.c:361
 msgid "Hide label"
-msgstr ""
+msgstr "ئەننى يوشۇرىدۇ"
 
 #. url label
 #: ../src/smartbookmark.c:372
@@ -46,9 +46,9 @@ msgstr "URL:  "
 
 #: ../src/smartbookmark.desktop.in.in.h:1
 msgid "Query websites from the Xfce panel"
-msgstr ""
+msgstr "Xfce パネルから ウェブサイトに質問する"
 
 #: ../src/smartbookmark.desktop.in.in.h:2
 msgid "SmartBookmark"
-msgstr ""
+msgstr "SmartBookmark"
 

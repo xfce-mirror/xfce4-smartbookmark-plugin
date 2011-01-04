@@ -1,3 +1,4 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-smartbookmark-plugin\n"
@@ -15,17 +16,17 @@ msgstr ""
 
 #: ../src/smartbookmark.c:310
 msgid "Preferences"
-msgstr ""
+msgstr "Προτιμήσεις"
 
 #. header
 #: ../src/smartbookmark.c:318
 msgid "Smartbookmark"
-msgstr ""
+msgstr "Smartbookmark"
 
 #. text label
 #: ../src/smartbookmark.c:335
 msgid "Label:"
-msgstr ""
+msgstr "Ετικέτα:"
 
 #. size label
 #: ../src/smartbookmark.c:350
@@ -35,18 +36,17 @@ msgstr "Μέγεθος:"
 #. Hide label option
 #: ../src/smartbookmark.c:361
 msgid "Hide label"
-msgstr ""
+msgstr "Απόκρυψη ετικετας"
 
 #. url label
 #: ../src/smartbookmark.c:372
 msgid "URL:  "
-msgstr ""
+msgstr "URL:"
 
 #: ../src/smartbookmark.desktop.in.in.h:1
 msgid "Query websites from the Xfce panel"
-msgstr ""
+msgstr "Ερώτημα ιστοσελίδων από το ταμπλό του Xfce"
 
 #: ../src/smartbookmark.desktop.in.in.h:2
 msgid "SmartBookmark"
-msgstr ""
-
+msgstr "SmartBookmark"

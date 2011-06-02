@@ -1,0 +1,56 @@
+# Dutch translation of the xfce4-smartbookmark-plugin package.
+# Copyright (C) The Xfce development team.
+# This file is distributed under the same license as the 
+# xfce4-smartbookmark-plugin package.
+# Pjotr, 2011.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce4-smartbookmark-plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-27 04:04+0000\n"
+"PO-Revision-Date: 2011-05-25 11:34+0200\n"
+"Last-Translator: Pjotr\n"
+"Language-Team: Dutch (Flemish)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../src/smartbookmark.c:310
+msgid "Preferences"
+msgstr "Voorkeuren"
+
+#. header
+#: ../src/smartbookmark.c:318
+msgid "Smartbookmark"
+msgstr "SlimmeBladwijzer"
+
+#. text label
+#: ../src/smartbookmark.c:335
+msgid "Label:"
+msgstr "Etiket:"
+
+#. size label
+#: ../src/smartbookmark.c:350
+msgid "Size:"
+msgstr "Grootte:"
+
+#. Hide label option
+#: ../src/smartbookmark.c:361
+msgid "Hide label"
+msgstr "Verberg etiket"
+
+#. url label
+#: ../src/smartbookmark.c:372
+msgid "URL:  "
+msgstr "URL:  "
+
+#: ../src/smartbookmark.desktop.in.in.h:1
+msgid "Query websites from the Xfce panel"
+msgstr "Doorzoek websites vanaf de Xfce-werkbalk"
+
+#: ../src/smartbookmark.desktop.in.in.h:2
+msgid "SmartBookmark"
+msgstr "SlimmeBladwijzer"

@@ -47,7 +47,6 @@ msgid "URL:  "
 msgstr "URL:  "
 
 #: ../src/smartbookmark.desktop.in.in.h:1
-#, fuzzy
 msgid "Query websites from the Xfce panel"
 msgstr "Upit web stranice iz Xfce ploče"
 

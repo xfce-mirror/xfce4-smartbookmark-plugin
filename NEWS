@@ -1,0 +1,6 @@
+0.4.4
+=====
+- Fix compatibility with Xfce 4.7+, fixing bug #6939 and #6940
+- Fix focusing the entry widget, fixing bug #7256
+- Translated into 28 more languages, for a total of 32, 29 of which are full translations
+- Update the build system

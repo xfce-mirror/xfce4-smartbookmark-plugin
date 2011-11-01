@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-smartbookmark-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-07-27 21:21-0400\n"
+"POT-Creation-Date: 2011-11-01 06:42-0700\n"
 "PO-Revision-Date: 2009-05-06 01:55+0500\n"
 "Last-Translator: Muhammad Ali Makki <makki.ma@gmail.com>\n"
 "Language-Team: Urdu <makki.ma@gmail.com>\n"
+"Language: ur\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,32 +20,32 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../src/smartbookmark.c:310
+#: ../src/smartbookmark.c:288
 msgid "Preferences"
 msgstr "ترجیحات"
 
 #. header
-#: ../src/smartbookmark.c:318
+#: ../src/smartbookmark.c:296
 msgid "Smartbookmark"
 msgstr "سمارٹ بُک مارک"
 
 #. text label
-#: ../src/smartbookmark.c:335
+#: ../src/smartbookmark.c:313
 msgid "Label:"
 msgstr "لیبل:"
 
 #. size label
-#: ../src/smartbookmark.c:350
+#: ../src/smartbookmark.c:328
 msgid "Size:"
 msgstr "حجم:"
 
 #. Hide label option
-#: ../src/smartbookmark.c:361
+#: ../src/smartbookmark.c:339
 msgid "Hide label"
 msgstr "لیبل چھپائیں"
 
 #. url label
-#: ../src/smartbookmark.c:372
+#: ../src/smartbookmark.c:350
 msgid "URL:  "
 msgstr "ربط:  "
 
@@ -55,4 +56,3 @@ msgstr "ایکسفس پینل کے لیے ویب سائٹ سے استفسار ک
 #: ../src/smartbookmark.desktop.in.in.h:2
 msgid "SmartBookmark"
 msgstr "سمارٹ بُک مارک"
-

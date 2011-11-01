@@ -35,9 +35,6 @@
 #include <config.h>
 #endif
 
-#include <X11/Xlib.h>
-#include <X11/Xatom.h>
-
 #include <gtk/gtk.h>
 #include <gdk/gdkkeysyms.h>
 #include <gdk/gdkx.h>
@@ -133,34 +130,15 @@ static void text_entry_activate_cb(GtkWidget *widget, t_search *search)
     update_search(search);
 }
 
-static gboolean entry_buttonpress_cb(GtkWidget *entry, GdkEventButton *event, gpointer data)
+static gboolean entry_buttonpress_cb(GtkWidget *entry, GdkEventButton *event, XfcePanelPlugin *plugin)
 {
-    static Atom atom = 0;
     GtkWidget *toplevel = gtk_widget_get_toplevel (entry);
 
     if (event->button != 3 && toplevel && toplevel->window) {
-        XClientMessageEvent xev;
-
-        if (G_UNLIKELY(!atom))
-            atom = XInternAtom (GDK_DISPLAY(), "_NET_ACTIVE_WINDOW", FALSE);
-
-        xev.type = ClientMessage;
-        xev.window = GDK_WINDOW_XID (toplevel->window);
-        xev.message_type = atom;
-        xev.format = 32;
-        xev.data.l[0] = 0;
-        xev.data.l[1] = 0;
-        xev.data.l[2] = 0;
-        xev.data.l[3] = 0;
-        xev.data.l[4] = 0;
-
-        XSendEvent (GDK_DISPLAY (), GDK_ROOT_WINDOW (), False,
-                    StructureNotifyMask, (XEvent *) & xev);
-
-                gtk_widget_grab_focus (entry);
+        xfce_panel_plugin_focus_widget (plugin, entry);
     }
 
-        return FALSE;
+    return FALSE;
 }
 
 /* callback: called when a button is pressed into the main entry */
@@ -214,7 +192,7 @@ static t_search *search_new(XfcePanelPlugin *plugin)
     gtk_box_pack_start(GTK_BOX(box), search->entry, FALSE, FALSE, 0);
     // g_signal_connect(command->entry, "activate", G_CALLBACK(runcl), command);
     g_signal_connect(search->entry, "key-press-event", G_CALLBACK(entry_keypress_cb), search);
-    g_signal_connect (search->entry, "button-press-event", G_CALLBACK(entry_buttonpress_cb), NULL);
+    g_signal_connect (search->entry, "button-press-event", G_CALLBACK(entry_buttonpress_cb), plugin);
 
     gtk_container_add( GTK_CONTAINER(plugin), search->ebox);
     xfce_panel_plugin_add_action_widget(plugin, search->ebox);

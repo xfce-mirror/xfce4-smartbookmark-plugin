@@ -9,8 +9,7 @@ libsmartbookmark_la_LDFLAGS =							\
 	-module						\
 	@LIBXFCE4PANEL_LIBS@ \
 	@LIBXFCEGUI4_LIBS@	\
-	@GDK_LIBS@	\
-	@LIBX11_LDFLAGS@
+	@GDK_LIBS@
 
 libsmartbookmark_la_SOURCES =							\
 	smartbookmark.c
@@ -21,7 +20,6 @@ libsmartbookmark_la_CFLAGS =	 \
 	-I$(top_srcdir) \
 	@LIBXFCEGUI4_CFLAGS@ \
 	@LIBXFCE4PANEL_CFLAGS@ \
-	@LIBX11_CFLAGS@	\
 	@GDK_CFLAGS@	\
 	-DPACKAGE_LOCALE_DIR=\"$(localedir)\"
 

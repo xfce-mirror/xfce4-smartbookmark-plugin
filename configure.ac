@@ -25,7 +25,7 @@ XDT_I18N([ca cs en_GB eu fr hu it pl pt_PT sq zh_TW])
 dnl Check for required packages
 XDT_CHECK_LIBX11_REQUIRE()
 XDT_CHECK_PACKAGE([GDK], [gdk-2.0], [2.0])
-XDT_CHECK_PACKAGE([LIBXFCEGUI4], [libxfce4panel-1.0], [4.2])
+XDT_CHECK_PACKAGE([LIBXFCEGUI4], [libxfcegui4-1.0], [4.2])
 XDT_CHECK_PACKAGE([LIBXFCE4PANEL], [libxfce4panel-1.0], [4.3.20])
 
 XDT_FEATURE_DEBUG()

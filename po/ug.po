@@ -13,12 +13,12 @@ msgstr ""
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../src/smartbookmark.c:288
 msgid "Preferences"
-msgstr "تەڭشەكلەر"
+msgstr "مايىللىق"
 
 #. header
 #: ../src/smartbookmark.c:296
@@ -38,7 +38,7 @@ msgstr "چوڭلۇقى:"
 #. Hide label option
 #: ../src/smartbookmark.c:339
 msgid "Hide label"
-msgstr "ئەننى يوشۇرىدۇ"
+msgstr "ئەننى يوشۇر"
 
 #. url label
 #: ../src/smartbookmark.c:350
@@ -47,7 +47,7 @@ msgstr "URL:  "
 
 #: ../src/smartbookmark.desktop.in.in.h:1
 msgid "Query websites from the Xfce panel"
-msgstr "Xfce パネルから ウェブサイトに質問する"
+msgstr "Xfce تاختىسى ئارقىلىق تورتۇرالاردىن سۈرۈشتۈرۈش"
 
 #: ../src/smartbookmark.desktop.in.in.h:2
 msgid "SmartBookmark"

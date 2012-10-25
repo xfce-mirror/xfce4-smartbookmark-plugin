@@ -1,15 +1,15 @@
-# xfce4-smaartboookmark-plugin Japanese translration file.
+# Uyghur translation for xfce4-smartbookmark-plugin.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Gheyret T.Kenji <gheyret@gmail.com>, 2010.
+# Gheyret Kenji <gheyret@gmail.com>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-smartbookmart-plugin\n"
+"Project-Id-Version: xfce4-smartbookmark-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-01 06:42-0700\n"
-"PO-Revision-Date: 2008-10-10 03:42+0900\n"
-"Last-Translator: Gheyret T.Kenji <gheyret@gmail.com>\n"
+"POT-Creation-Date: 2012-10-24 04:18+0000\n"
+"PO-Revision-Date: 2011-11-09 16:10+0900\n"
+"Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #: ../src/smartbookmark.c:288
 msgid "Preferences"
-msgstr "مايىللىق"
+msgstr "تەڭشەكلەر"
 
 #. header
 #: ../src/smartbookmark.c:296

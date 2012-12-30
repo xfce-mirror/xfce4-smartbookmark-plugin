@@ -2,6 +2,6 @@
 Type=X-XFCE-PanelPlugin
 _Name=SmartBookmark
 _Comment=Query websites from the Xfce panel
-Icon=gtk-preferences
+Icon=system-search
 X-XFCE-Module=smartbookmark
-X-XFCE-Unique=false
+X-XFCE-Internal=FALSE

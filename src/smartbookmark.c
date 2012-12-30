@@ -40,7 +40,7 @@
 #include <gdk/gdkx.h>
 
 #include <libxfce4util/libxfce4util.h>
-#include <libxfcegui4/dialogs.h>
+#include <libxfce4ui/libxfce4ui.h>
 #include <libxfce4panel/xfce-panel-plugin.h>
 
 /*
@@ -71,19 +71,18 @@ typedef struct {
 
 static void
 smartbookmark_construct(XfcePanelPlugin *plugin);
-XFCE_PANEL_PLUGIN_REGISTER_INTERNAL(smartbookmark_construct);
+XFCE_PANEL_PLUGIN_REGISTER(smartbookmark_construct);
 
 static gboolean do_search(const char *url, const char *keyword)
 {
     DBG ("Do search");
     gchar *execute;
     gboolean success;
-    execute = g_strconcat("xfbrowser4  \"", url, NULL);//works better for me
-    //execute = g_strconcat("x-www-browser \"", url, NULL);
+    execute = g_strconcat("exo-open --launch WebBrowser \"", url, NULL);
     execute = g_strconcat(execute, keyword, NULL);
     execute = g_strconcat(execute, "\"", NULL);
 
-    success = exec_command(execute);
+    success = g_spawn_command_line_async(execute, NULL);
     g_free(execute);
 
     return success;
@@ -285,21 +284,16 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
     xfce_panel_plugin_block_menu(plugin);
     GtkWidget *urllabel, *textlabel, *sizelabel;
     DBG ("search_create_options");
-    search->opt_dialog  = gtk_dialog_new_with_buttons(_("Preferences"),
+    search->opt_dialog  = xfce_titled_dialog_new_with_buttons(_("Smartbookmark"),
                                              NULL, GTK_DIALOG_NO_SEPARATOR,
                                              GTK_STOCK_CLOSE, GTK_RESPONSE_OK,
                                              NULL);
     
+    xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (search->opt_dialog), _("Preferences"));
+    gtk_window_set_icon_name  (GTK_WINDOW (search->opt_dialog), "system-search");
+
     gtk_container_set_border_width(GTK_CONTAINER (search->opt_dialog), 2);
     
-    /* header */
-    header = xfce_create_header(NULL, _("Smartbookmark"));
-    gtk_widget_set_size_request(GTK_BIN(header)->child, 200, 32);
-    gtk_container_set_border_width(GTK_CONTAINER(header), 6);
-    gtk_widget_show(header);
-    gtk_box_pack_start(GTK_BOX(GTK_DIALOG(search->opt_dialog)->vbox), header,
-                        FALSE, TRUE, 0);
-
     vbox = gtk_vbox_new(FALSE, 0);
     gtk_widget_show(vbox);
     gtk_container_add(GTK_CONTAINER(GTK_DIALOG(search->opt_dialog)->vbox), vbox);
@@ -330,7 +324,7 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
     gtk_box_pack_start(GTK_BOX(hbox), sizelabel, FALSE, FALSE, 5);
 
     /* size spinner */
-    GtkObject* spinner_adj = gtk_adjustment_new (search->size, 2.0, 10.0, 1.0, 5.0, 5.0);
+    GtkObject* spinner_adj = gtk_adjustment_new (search->size, 2.0, 10.0, 1.0, 5.0, 0);
     search->size_spinner = gtk_spin_button_new(GTK_ADJUSTMENT(spinner_adj), 1.0, 0);
     gtk_box_pack_start(GTK_BOX(hbox), search->size_spinner, FALSE, FALSE, 0);
     gtk_widget_show(search->size_spinner);

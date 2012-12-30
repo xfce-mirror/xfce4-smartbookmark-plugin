@@ -361,6 +361,7 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
     search_apply_options_cb(search);
     gtk_widget_destroy(search->opt_dialog);
     xfce_panel_plugin_unblock_menu(plugin);
+    search_write_config(plugin, search);
 }
 
 

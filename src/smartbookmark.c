@@ -146,7 +146,9 @@ static gboolean entry_keypress_cb(GtkWidget *entry, GdkEventKey *event, t_search
     const gchar *key = NULL;   /* keyword */
 
     switch (event->keyval) {
+/* XXX use GDK_KEY_xx from gdkkeyssyms.h when we depend on gtk+ > 2.22 */
         case GDK_Return:
+        case GDK_KP_Enter:
             key = gtk_entry_get_text(GTK_ENTRY(entry));
 
             if (do_search(search->url, key)) {

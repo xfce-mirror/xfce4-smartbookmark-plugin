@@ -76,14 +76,21 @@ XFCE_PANEL_PLUGIN_REGISTER(smartbookmark_construct);
 static gboolean do_search(const char *url, const char *keyword)
 {
     DBG ("Do search");
-    gchar *execute;
+    gchar *argv[] = { "exo-open", "--launch", "WebBrowser", NULL, NULL };
+    GError *error = NULL;
+    gchar *complete_url;
     gboolean success;
-    execute = g_strconcat("exo-open --launch WebBrowser \"", url, NULL);
-    execute = g_strconcat(execute, keyword, NULL);
-    execute = g_strconcat(execute, "\"", NULL);
+    complete_url = g_strconcat(url, keyword, NULL);
+    argv[3] = complete_url;
 
-    success = g_spawn_command_line_async(execute, NULL);
-    g_free(execute);
+    success = g_spawn_async(NULL, (gchar **)argv, NULL,
+        G_SPAWN_SEARCH_PATH | G_SPAWN_DO_NOT_REAP_CHILD, NULL, NULL, NULL, &error);
+
+    if (!success) {
+        xfce_dialog_show_error(NULL, error, _("Failed to send %s to your preferred browser"), complete_url);
+        g_error_free(error);
+    }
+    g_free(complete_url);
 
     return success;
 }

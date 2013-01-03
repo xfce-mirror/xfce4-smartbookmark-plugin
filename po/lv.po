@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-smartbookmark-plugin 0.4.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-01 06:42-0700\n"
+"POT-Creation-Date: 2013-01-03 22:26+0100\n"
 "PO-Revision-Date: 2009-09-18 23:14+0100\n"
 "Last-Translator: Rihards Prieditis <rprieditis@gmail.com>\n"
 "Language-Team: Latvian <translation-team-lv@lists.sourceforge.net>\n"
@@ -20,39 +20,43 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
 
-#: ../src/smartbookmark.c:288
-msgid "Preferences"
-msgstr "Uzstādījumi"
+#: ../src/smartbookmark.c:90
+#, c-format
+msgid "Failed to send %s to your preferred browser"
+msgstr ""
 
-#. header
 #: ../src/smartbookmark.c:296
 msgid "Smartbookmark"
 msgstr "Viedās grāmatzīmes"
 
+#: ../src/smartbookmark.c:301
+msgid "Preferences"
+msgstr "Uzstādījumi"
+
 #. text label
-#: ../src/smartbookmark.c:313
+#: ../src/smartbookmark.c:316
 msgid "Label:"
 msgstr "Etiķete:"
 
 #. size label
-#: ../src/smartbookmark.c:328
+#: ../src/smartbookmark.c:331
 msgid "Size:"
 msgstr "Izmērs:"
 
 #. Hide label option
-#: ../src/smartbookmark.c:339
+#: ../src/smartbookmark.c:342
 msgid "Hide label"
 msgstr "Slēpt etiķeti"
 
 #. url label
-#: ../src/smartbookmark.c:350
+#: ../src/smartbookmark.c:353
 msgid "URL:  "
 msgstr "URL:  "
 
-#: ../src/smartbookmark.desktop.in.in.h:1
-msgid "Query websites from the Xfce panel"
-msgstr "Vaicāt tīmekļa vietni no Xfce paneļa"
-
-#: ../src/smartbookmark.desktop.in.in.h:2
+#: ../src/smartbookmark.desktop.in.h:1
 msgid "SmartBookmark"
 msgstr "Viedās grāmatzīmes"
+
+#: ../src/smartbookmark.desktop.in.h:2
+msgid "Query websites from the Xfce panel"
+msgstr "Vaicāt tīmekļa vietni no Xfce paneļa"

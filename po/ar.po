@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-19 00:54+0000\n"
+"POT-Creation-Date: 2013-01-03 22:26+0100\n"
 "PO-Revision-Date: 2012-11-19 06:52+0300\n"
 "Last-Translator: محمد الحرقان <malham1@gmail.com>\n"
 "Language-Team: http://www.vertaal.com.ar/files/factory/ar/list/\n"
@@ -19,39 +19,43 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "X-Generator: Virtaal 0.7.1\n"
 
-#: ../src/smartbookmark.c:288
-msgid "Preferences"
-msgstr "تفضيلات"
+#: ../src/smartbookmark.c:90
+#, c-format
+msgid "Failed to send %s to your preferred browser"
+msgstr ""
 
-#. header
 #: ../src/smartbookmark.c:296
 msgid "Smartbookmark"
 msgstr "علامات ذكية"
 
+#: ../src/smartbookmark.c:301
+msgid "Preferences"
+msgstr "تفضيلات"
+
 #. text label
-#: ../src/smartbookmark.c:313
+#: ../src/smartbookmark.c:316
 msgid "Label:"
 msgstr "التسمية:"
 
 #. size label
-#: ../src/smartbookmark.c:328
+#: ../src/smartbookmark.c:331
 msgid "Size:"
 msgstr "حجم:"
 
 #. Hide label option
-#: ../src/smartbookmark.c:339
+#: ../src/smartbookmark.c:342
 msgid "Hide label"
 msgstr "إخفاء الوسم"
 
 #. url label
-#: ../src/smartbookmark.c:350
+#: ../src/smartbookmark.c:353
 msgid "URL:  "
 msgstr "عنوان:  "
 
-#: ../src/smartbookmark.desktop.in.in.h:1
-msgid "Query websites from the Xfce panel"
-msgstr "موقع للإستعلام عن شريط إكسفس"
-
-#: ../src/smartbookmark.desktop.in.in.h:2
+#: ../src/smartbookmark.desktop.in.h:1
 msgid "SmartBookmark"
 msgstr "علامات ذكية"
+
+#: ../src/smartbookmark.desktop.in.h:2
+msgid "Query websites from the Xfce panel"
+msgstr "موقع للإستعلام عن شريط إكسفس"

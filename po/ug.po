@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-smartbookmark-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-24 04:18+0000\n"
+"POT-Creation-Date: 2013-01-03 22:26+0100\n"
 "PO-Revision-Date: 2011-11-09 16:10+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -16,39 +16,43 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/smartbookmark.c:288
-msgid "Preferences"
-msgstr "تەڭشەكلەر"
+#: ../src/smartbookmark.c:90
+#, c-format
+msgid "Failed to send %s to your preferred browser"
+msgstr ""
 
-#. header
 #: ../src/smartbookmark.c:296
 msgid "Smartbookmark"
 msgstr "Smartbookmark"
 
+#: ../src/smartbookmark.c:301
+msgid "Preferences"
+msgstr "تەڭشەكلەر"
+
 #. text label
-#: ../src/smartbookmark.c:313
+#: ../src/smartbookmark.c:316
 msgid "Label:"
 msgstr "ئەن:"
 
 #. size label
-#: ../src/smartbookmark.c:328
+#: ../src/smartbookmark.c:331
 msgid "Size:"
 msgstr "چوڭلۇقى:"
 
 #. Hide label option
-#: ../src/smartbookmark.c:339
+#: ../src/smartbookmark.c:342
 msgid "Hide label"
 msgstr "ئەننى يوشۇر"
 
 #. url label
-#: ../src/smartbookmark.c:350
+#: ../src/smartbookmark.c:353
 msgid "URL:  "
 msgstr "URL:  "
 
-#: ../src/smartbookmark.desktop.in.in.h:1
-msgid "Query websites from the Xfce panel"
-msgstr "Xfce تاختىسى ئارقىلىق تورتۇرالاردىن سۈرۈشتۈرۈش"
-
-#: ../src/smartbookmark.desktop.in.in.h:2
+#: ../src/smartbookmark.desktop.in.h:1
 msgid "SmartBookmark"
 msgstr "SmartBookmark"
+
+#: ../src/smartbookmark.desktop.in.h:2
+msgid "Query websites from the Xfce panel"
+msgstr "Xfce تاختىسى ئارقىلىق تورتۇرالاردىن سۈرۈشتۈرۈش"

@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-smartbook-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-03 22:26+0100\n"
-"PO-Revision-Date: 2008-11-13 21:25-0500\n"
-"Last-Translator: Og Maciel <ogmaciel@gnome.org>\n"
+"POT-Creation-Date: 2013-01-04 04:21+0000\n"
+"PO-Revision-Date: 2013-01-04 05:01-0300\n"
+"Last-Translator: Rafael Ferreira <rafael.f.f1@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar2.conectiva.com.br>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 #: ../src/smartbookmark.c:90
 #, c-format
 msgid "Failed to send %s to your preferred browser"
-msgstr ""
+msgstr "Falha ao enviar %s para as preferências do seu navegador"
 
 #: ../src/smartbookmark.c:296
 msgid "Smartbookmark"
@@ -51,9 +51,9 @@ msgid "URL:  "
 msgstr "URL:  "
 
 #: ../src/smartbookmark.desktop.in.h:1
-msgid "SmartBookmark"
-msgstr "Marcador Inteligente"
-
-#: ../src/smartbookmark.desktop.in.h:2
 msgid "Query websites from the Xfce panel"
 msgstr "Consulte sites pelo painel do Xfce"
+
+#: ../src/smartbookmark.desktop.in.h:2
+msgid "SmartBookmark"
+msgstr "Marcador Inteligente"

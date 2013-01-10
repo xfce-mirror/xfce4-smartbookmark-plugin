@@ -4,25 +4,25 @@
 # Emanuele Rocca <ema@debian.org>, 2006.
 # Fabio Riga <usul@aruba.it>, 2007.
 # Cristian Marchi <cri.penta@gmail.com>, 2009.
-#
-#
+# 
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.4.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-03 22:26+0100\n"
+"POT-Creation-Date: 2013-01-10 15:30+0000\n"
 "PO-Revision-Date: 2009-12-29 08:18+0100\n"
 "Last-Translator: Cristian Marchi <cri.penta@gmail.com>\n"
 "Language-Team: Italian Translation Team <xfce-it-translators@googlegroups>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 
 #: ../src/smartbookmark.c:90
 #, c-format
 msgid "Failed to send %s to your preferred browser"
-msgstr ""
+msgstr "Impossibile inviare \"%s\" al browser preferito"
 
 #: ../src/smartbookmark.c:296
 msgid "Smartbookmark"
@@ -53,9 +53,9 @@ msgid "URL:  "
 msgstr "URL:  "
 
 #: ../src/smartbookmark.desktop.in.h:1
-msgid "SmartBookmark"
-msgstr "SmartBookmark"
-
-#: ../src/smartbookmark.desktop.in.h:2
 msgid "Query websites from the Xfce panel"
 msgstr "Interroga i siti web dal pannello di Xfce"
+
+#: ../src/smartbookmark.desktop.in.h:2
+msgid "SmartBookmark"
+msgstr "SmartBookmark"

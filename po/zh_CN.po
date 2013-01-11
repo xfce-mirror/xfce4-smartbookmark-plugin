@@ -22,7 +22,7 @@ msgstr ""
 #: ../src/smartbookmark.c:90
 #, c-format
 msgid "Failed to send %s to your preferred browser"
-msgstr "发送 %s 至你的首选浏览器失败"
+msgstr "发送 %s 至您的首选浏览器失败"
 
 #: ../src/smartbookmark.c:296
 msgid "Smartbookmark"

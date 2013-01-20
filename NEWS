@@ -1,3 +1,11 @@
+0.4.5 : 2013/01/20
+=====
+- Port to libxfce4ui
+- Build the plugin as a module
+- Fix broken argument handling (bug #8642)
+- Save config after destroying the dialog (bug #9523)
+- Allow numpad enter to trigger the search too (bug #9663)
+
 0.4.4
 =====
 - Fix compatibility with Xfce 4.7+, fixing bug #6939 and #6940

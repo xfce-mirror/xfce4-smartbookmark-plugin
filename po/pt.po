@@ -19,7 +19,7 @@ msgstr ""
 #: ../src/smartbookmark.c:90
 #, c-format
 msgid "Failed to send %s to your preferred browser"
-msgstr "Ocorreu uma falha ao enviar % para o navegador"
+msgstr "Ocorreu uma falha ao enviar %s para o navegador"
 
 #: ../src/smartbookmark.c:296
 msgid "Smartbookmark"
@@ -51,7 +51,7 @@ msgstr "URL:"
 
 #: ../src/smartbookmark.desktop.in.h:1
 msgid "Query websites from the Xfce panel"
-msgstr "Consulte páginas web a partir do painel do Xfce"
+msgstr "Consultar páginas web a partir do painel do Xfce"
 
 #: ../src/smartbookmark.desktop.in.h:2
 msgid "SmartBookmark"

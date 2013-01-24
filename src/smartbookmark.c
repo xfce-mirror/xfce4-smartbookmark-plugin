@@ -84,7 +84,7 @@ static gboolean do_search(const char *url, const char *keyword)
     argv[3] = complete_url;
 
     success = g_spawn_async(NULL, (gchar **)argv, NULL,
-        G_SPAWN_SEARCH_PATH | G_SPAWN_DO_NOT_REAP_CHILD, NULL, NULL, NULL, &error);
+        G_SPAWN_SEARCH_PATH, NULL, NULL, NULL, &error);
 
     if (!success) {
         xfce_dialog_show_error(NULL, error, _("Failed to send %s to your preferred browser"), complete_url);

@@ -47,7 +47,7 @@
  * Types
  */
 typedef struct {
-    GtkWidget *ebox;
+    GtkWidget *box;
     GtkWidget *entry;           /* keyword entry */
     GtkWidget *label;
 
@@ -99,10 +99,10 @@ static gboolean do_search(const char *url, const char *keyword)
 /* redraw the plugin */
 static void update_search(t_search *search) {
     DBG ("Update search");
-    gtk_widget_hide(GTK_WIDGET(search->ebox));
+    gtk_widget_hide(GTK_WIDGET(search->box));
     gtk_widget_hide(search->label);
     gtk_label_set_text(GTK_LABEL(search->label), search->label_text);
-    gtk_widget_show(GTK_WIDGET(search->ebox));
+    gtk_widget_show(GTK_WIDGET(search->box));
     if (!search->hide_label) {
         gtk_widget_show(search->label);
     }
@@ -173,14 +173,13 @@ static void search_read_config(t_search *search, const gchar* filename);
 static t_search *search_new(XfcePanelPlugin *plugin)
 {
     t_search *search;
-    GtkWidget *box, *align;
+    GtkWidget *align;
     gchar* filename;
     
     search = g_new0(t_search, 1);
-    search->ebox = gtk_event_box_new();
+    search->box = xfce_hvbox_new(!xfce_panel_plugin_get_orientation(plugin), FALSE, 0);
     align = gtk_alignment_new(0.5, 0.5, 0, 0);
-    gtk_container_add(GTK_CONTAINER(search->ebox), align);
-    box = gtk_vbox_new(FALSE, 0);
+    gtk_container_add(GTK_CONTAINER(align), search->box);
 
     /* default options */
     search->url = "http://bugs.debian.org/";
@@ -191,20 +190,18 @@ static t_search *search_new(XfcePanelPlugin *plugin)
     filename = xfce_panel_plugin_save_location(plugin, TRUE);
     search_read_config(search, filename);
 
-    gtk_container_add(GTK_CONTAINER(align), box);
     search->entry = gtk_entry_new();
     gtk_entry_set_width_chars(GTK_ENTRY(search->entry), search->size);
 
     search->label = gtk_label_new(search->label_text);
-    gtk_box_pack_start(GTK_BOX(box), search->label, FALSE, FALSE, 0);
-    gtk_box_pack_start(GTK_BOX(box), search->entry, FALSE, FALSE, 0);
+    gtk_box_pack_start(GTK_BOX(search->box), search->label, FALSE, FALSE, 0);
+    gtk_box_pack_start(GTK_BOX(search->box), search->entry, FALSE, FALSE, 0);
     // g_signal_connect(command->entry, "activate", G_CALLBACK(runcl), command);
     g_signal_connect(search->entry, "key-press-event", G_CALLBACK(entry_keypress_cb), search);
     g_signal_connect (search->entry, "button-press-event", G_CALLBACK(entry_buttonpress_cb), plugin);
 
-    gtk_container_add( GTK_CONTAINER(plugin), search->ebox);
-    xfce_panel_plugin_add_action_widget(plugin, search->ebox);
-    gtk_widget_show_all(search->ebox);
+    gtk_container_add( GTK_CONTAINER(plugin), align);
+    gtk_widget_show_all(align);
 
     if (search->hide_label) {
         gtk_widget_hide(search->label);

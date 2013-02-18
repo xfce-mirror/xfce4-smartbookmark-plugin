@@ -207,44 +207,10 @@ static t_search *search_new(XfcePanelPlugin *plugin)
         gtk_widget_hide(search->label);
     }
 
-    /*
-    filename = xfce_panel_plugin_save_location(plugin, TRUE);
-    search_read_config(search, filename);
-    */
     DBG ("SmartBookMark created");
 
     return (search);
 }
-
-/*
-static gboolean search_control_new(Control * ctrl)
-{
-    t_search *search;
-
-    search = search_new();
-
-    gtk_container_add(GTK_CONTAINER(ctrl->base), search->ebox);
-
-    ctrl->data = (gpointer) search;
-    ctrl->with_popup = FALSE;
-
-    gtk_widget_set_size_request(ctrl->base, -1, -1);
-
-    return (TRUE);
-}
-
-static void search_free(Control * ctrl)
-{
-    t_search *search;
-
-    g_return_if_fail(ctrl != NULL);
-    g_return_if_fail(ctrl->data != NULL);
-
-    search = (t_search *) ctrl->data;
-
-    g_free(search);
-}
-*/
 
 static void search_read_config(t_search *search, const gchar* filename)
 {
@@ -387,6 +353,5 @@ smartbookmark_construct(XfcePanelPlugin *plugin)
     xfce_panel_plugin_menu_show_configure (plugin);
     g_signal_connect (plugin, "configure-plugin",
                       G_CALLBACK (search_create_options), search);
-    //cc->read_config = search_read_config;
 }
 

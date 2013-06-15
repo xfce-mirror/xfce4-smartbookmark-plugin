@@ -2,57 +2,57 @@
 # Copyright (C) 2008 THE xfce4-smartbookmark-plugin'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the xfce4-smartbookmark-plugin package.
 # Andhika Padmawan <andhika.padmawan@gmail.com>, 2008.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-smartbookmark-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-03 22:26+0100\n"
+"POT-Creation-Date: 2013-06-15 04:30+0000\n"
 "PO-Revision-Date: 2008-09-02 22:15+0700\n"
 "Last-Translator: Andhika Padmawan <andhika.padmawan@gmail.com>\n"
 "Language-Team: Indonesian <id@li.org>\n"
-"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: id\n"
 
 #: ../src/smartbookmark.c:90
 #, c-format
 msgid "Failed to send %s to your preferred browser"
-msgstr ""
+msgstr "Gagal mengirimkan %s pada perambah (browser) pilihan anda"
 
-#: ../src/smartbookmark.c:296
+#: ../src/smartbookmark.c:259
 msgid "Smartbookmark"
 msgstr "Bookmarkcerdas"
 
-#: ../src/smartbookmark.c:301
+#: ../src/smartbookmark.c:264
 msgid "Preferences"
 msgstr "Pengaturan"
 
 #. text label
-#: ../src/smartbookmark.c:316
+#: ../src/smartbookmark.c:279
 msgid "Label:"
 msgstr "Label:"
 
 #. size label
-#: ../src/smartbookmark.c:331
+#: ../src/smartbookmark.c:294
 msgid "Size:"
 msgstr "Ukuran:"
 
 #. Hide label option
-#: ../src/smartbookmark.c:342
+#: ../src/smartbookmark.c:305
 msgid "Hide label"
 msgstr "Sembunyikan label"
 
 #. url label
-#: ../src/smartbookmark.c:353
+#: ../src/smartbookmark.c:316
 msgid "URL:  "
 msgstr "URL:  "
 
 #: ../src/smartbookmark.desktop.in.h:1
-msgid "SmartBookmark"
-msgstr "BookmarkCerdas"
-
-#: ../src/smartbookmark.desktop.in.h:2
 msgid "Query websites from the Xfce panel"
 msgstr "Kueri situs web dari panel Xfce"
+
+#: ../src/smartbookmark.desktop.in.h:2
+msgid "SmartBookmark"
+msgstr "BookmarkCerdas"

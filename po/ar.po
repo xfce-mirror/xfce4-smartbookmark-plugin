@@ -1,56 +1,57 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# كريم اولاد الشلحة <herr.linux88@gmail.com>, 2012.
-# محمد الحرقان <malham1@gmail.com>, 2012.
+# 
+# Translators:
+# Karim Oulad Chalha <herr.linux88@gmail.com>, 2012
+# Karim Oulad Chalha <herr.linux88@gmail.com>, 2012
+# محمد الحرقان <malham1@gmail.com>, 2012-2013
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-03 22:26+0100\n"
-"PO-Revision-Date: 2012-11-19 06:52+0300\n"
-"Last-Translator: محمد الحرقان <malham1@gmail.com>\n"
-"Language-Team: http://www.vertaal.com.ar/files/factory/ar/list/\n"
-"Language: ar\n"
+"POT-Creation-Date: 2013-07-03 21:17+0200\n"
+"PO-Revision-Date: 2013-09-30 11:24+0000\n"
+"Last-Translator: mohammad alhargan <malham1@hotmail.com>\n"
+"Language-Team: Arabic (http://www.transifex.com/projects/p/xfce/language/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Virtaal 0.7.1\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 #: ../src/smartbookmark.c:90
 #, c-format
 msgid "Failed to send %s to your preferred browser"
-msgstr ""
+msgstr "فشل في إرسال %s إلى متصفحك المفضل"
 
-#: ../src/smartbookmark.c:296
+#: ../src/smartbookmark.c:259
 msgid "Smartbookmark"
 msgstr "علامات ذكية"
 
-#: ../src/smartbookmark.c:301
+#: ../src/smartbookmark.c:264
 msgid "Preferences"
 msgstr "تفضيلات"
 
 #. text label
-#: ../src/smartbookmark.c:316
+#: ../src/smartbookmark.c:279
 msgid "Label:"
 msgstr "التسمية:"
 
 #. size label
-#: ../src/smartbookmark.c:331
+#: ../src/smartbookmark.c:294
 msgid "Size:"
 msgstr "حجم:"
 
 #. Hide label option
-#: ../src/smartbookmark.c:342
+#: ../src/smartbookmark.c:305
 msgid "Hide label"
 msgstr "إخفاء الوسم"
 
 #. url label
-#: ../src/smartbookmark.c:353
+#: ../src/smartbookmark.c:316
 msgid "URL:  "
-msgstr "عنوان:  "
+msgstr "مسار:  "
 
 #: ../src/smartbookmark.desktop.in.h:1
 msgid "SmartBookmark"

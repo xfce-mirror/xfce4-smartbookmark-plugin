@@ -1,58 +1,62 @@
-# xfce4-smartbookmark-plugin
-# Copyright (C) 2006
-# This file is distributed under the same license as the xfce4-smartbookmark-plugin package.
-# Yves-Alexis Perez <corsac@corsac.net>, 2006.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # 
+# Translators:
+# jc1 <jc1.quebecos@gmail.com>, 2013
+# Urides <urien.desterres@gmail.com>, 2014
+# Yves-Alexis Perez <corsac@corsac.net>, 2006
 msgid ""
 msgstr ""
-"Project-Id-Version: 0.4.1\n"
+"Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-05 17:48+0000\n"
-"PO-Revision-Date: 2006-08-19 18:41+0100\n"
-"Last-Translator: Maximilian Schleiss <maximilian@xfce.org>\n"
-"Language-Team: French <xfce-i18n@xfce.org>\n"
+"POT-Creation-Date: 2013-07-03 21:17+0200\n"
+"PO-Revision-Date: 2014-05-14 15:34+0000\n"
+"Last-Translator: Urides <urien.desterres@gmail.com>\n"
+"Language-Team: French (http://www.transifex.com/projects/p/xfce-panel-plugins/language/fr/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../src/smartbookmark.c:90
 #, c-format
 msgid "Failed to send %s to your preferred browser"
-msgstr "Impossible d'envoyer %s sur votre navigateur préféré"
+msgstr "Impossible d'envoyer %s à votre navigateur préféré"
 
-#: ../src/smartbookmark.c:296
+#: ../src/smartbookmark.c:259
 msgid "Smartbookmark"
 msgstr "Smartbookmark"
 
-#: ../src/smartbookmark.c:301
+#: ../src/smartbookmark.c:264
 msgid "Preferences"
 msgstr "Préférences"
 
 #. text label
-#: ../src/smartbookmark.c:316
+#: ../src/smartbookmark.c:279
 msgid "Label:"
-msgstr "Nom :"
+msgstr "Étiquette :"
 
 #. size label
-#: ../src/smartbookmark.c:331
+#: ../src/smartbookmark.c:294
 msgid "Size:"
 msgstr "Taille :"
 
 #. Hide label option
-#: ../src/smartbookmark.c:342
+#: ../src/smartbookmark.c:305
 msgid "Hide label"
-msgstr "Cacher le label"
+msgstr "Masquer l’étiquette"
 
 #. url label
-#: ../src/smartbookmark.c:353
+#: ../src/smartbookmark.c:316
 msgid "URL:  "
 msgstr "URL :  "
 
 #: ../src/smartbookmark.desktop.in.h:1
-msgid "Query websites from the Xfce panel"
-msgstr "Questionner des sites internet depuis le panneau Xfce"
-
-#: ../src/smartbookmark.desktop.in.h:2
 msgid "SmartBookmark"
 msgstr "SmartBookmark"
+
+#: ../src/smartbookmark.desktop.in.h:2
+msgid "Query websites from the Xfce panel"
+msgstr "Questionner des sites internet depuis le panneau Xfce"

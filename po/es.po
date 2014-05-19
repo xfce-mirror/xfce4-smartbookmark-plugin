@@ -1,27 +1,28 @@
-# Spanish translations for xfce4-smartbookmark-plugin package
-# Traducciones al español para el paquete xfce4-smartbookmark-plugin.
-# Copyright (C) 2009 THE xfce4-smartbookmark-plugin'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the xfce4-smartbookmark-plugin package.
-#  <abel.martin.ruiz@gmail.com>, 2009.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+#  <abel.martin.ruiz@gmail.com>, 2009
+# Pablo Lezaeta <prflr88@gmail.com>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-smartbookmark-plugin\n"
+"Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-16 18:15+0000\n"
-"PO-Revision-Date: 2013-04-16 16:51-0600\n"
-"Last-Translator: Adolfo Jayme Barrientos <fitoschido@gmail.com>\n"
-"Language-Team: Spanish\n"
+"POT-Creation-Date: 2013-07-03 21:17+0200\n"
+"PO-Revision-Date: 2014-05-19 05:38+0000\n"
+"Last-Translator: Pablo Lezaeta <prflr88@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/xfce-panel-plugins/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.4\n"
 
 #: ../src/smartbookmark.c:90
 #, c-format
 msgid "Failed to send %s to your preferred browser"
-msgstr "Falló el envío de %s a su navegador preferido"
+msgstr "No se pudo enviar %s a su navegador preferido"
 
 #: ../src/smartbookmark.c:259
 msgid "Smartbookmark"
@@ -52,9 +53,9 @@ msgid "URL:  "
 msgstr "URL:"
 
 #: ../src/smartbookmark.desktop.in.h:1
-msgid "Query websites from the Xfce panel"
-msgstr "Consulte sitios web desde el panel de Xfce"
-
-#: ../src/smartbookmark.desktop.in.h:2
 msgid "SmartBookmark"
 msgstr "Marcador inteligente"
+
+#: ../src/smartbookmark.desktop.in.h:2
+msgid "Query websites from the Xfce panel"
+msgstr "Consulte sitios web desde el panel de Xfce"

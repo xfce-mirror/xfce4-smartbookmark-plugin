@@ -1,3 +1,11 @@
+0.4.6 : 2015/03/09
+=====
+- Remove the GtkEventBox and use an XfceHVBox instead
+- Make sure childs are reaped, instead of leaving zombies behind (bug #9791)
+- Updated translations: ar, ast, cs, da, de, es, eu, fr, hr, hu, id, ja, ko,
+  nl, ru, sk, sr, sv, tr, ug, zh_TW
+- New translations: bg, en_AU, is, ms, nb, oc, th
+
 0.4.5 : 2013/01/20
 =====
 - Port to libxfce4ui

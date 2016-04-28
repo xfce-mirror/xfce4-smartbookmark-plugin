@@ -264,9 +264,7 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
 
     gtk_container_set_border_width(GTK_CONTAINER (search->opt_dialog), 2);
     
-    vbox = gtk_vbox_new(FALSE, 0);
-    gtk_widget_show(vbox);
-    gtk_container_add(GTK_CONTAINER(GTK_DIALOG(search->opt_dialog)->vbox), vbox);
+    vbox = gtk_dialog_get_content_area (GTK_DIALOG(search->opt_dialog));
 
     DBG ("Creating hbox");
     hbox = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 0);

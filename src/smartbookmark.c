@@ -269,7 +269,7 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
     gtk_container_add(GTK_CONTAINER(GTK_DIALOG(search->opt_dialog)->vbox), vbox);
 
     DBG ("Creating hbox");
-    hbox = gtk_hbox_new(FALSE, 0);
+    hbox = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 0);
     gtk_widget_show(hbox);
     gtk_box_pack_start(GTK_BOX(vbox), hbox, FALSE, FALSE, 5);
 
@@ -307,7 +307,7 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
     gtk_widget_show(search->hide_check);
 
     DBG ("Creating second hbox");
-    hbox = gtk_hbox_new(FALSE, 0);
+    hbox = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 0);
     gtk_widget_show(hbox);
     gtk_box_pack_start(GTK_BOX(vbox), hbox, FALSE, FALSE, 5);
     /* url label */

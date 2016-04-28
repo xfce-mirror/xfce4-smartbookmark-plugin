@@ -255,7 +255,8 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
     GtkWidget *urllabel, *textlabel, *sizelabel;
     DBG ("search_create_options");
     search->opt_dialog  = xfce_titled_dialog_new_with_buttons(_("Smartbookmark"),
-                                             NULL, 0,
+                                             GTK_WINDOW (gtk_widget_get_toplevel (GTK_WIDGET (plugin))),
+                                             GTK_DIALOG_DESTROY_WITH_PARENT,
                                              "gtk-close", GTK_RESPONSE_OK,
                                              NULL);
     

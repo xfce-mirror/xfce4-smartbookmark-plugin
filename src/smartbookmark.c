@@ -140,7 +140,7 @@ static gboolean entry_buttonpress_cb(GtkWidget *entry, GdkEventButton *event, Xf
 {
     GtkWidget *toplevel = gtk_widget_get_toplevel (entry);
 
-    if (event->button != 3 && toplevel && toplevel->window) {
+    if (event->button != 3 && toplevel && gtk_widget_get_window(toplevel)) {
         xfce_panel_plugin_focus_widget (plugin, entry);
     }
 

@@ -5,3 +5,4 @@ _Comment=Query websites from the Xfce panel
 Icon=system-search
 X-XFCE-Module=smartbookmark
 X-XFCE-Internal=FALSE
+X-XFCE-API=2.0

@@ -172,13 +172,12 @@ static void search_read_config(t_search *search, const gchar* filename);
 static t_search *search_new(XfcePanelPlugin *plugin)
 {
     t_search *search;
-    GtkWidget *align;
     gchar* filename;
     
     search = g_new0(t_search, 1);
-    search->box = xfce_hvbox_new(!xfce_panel_plugin_get_orientation(plugin), FALSE, 0);
-    align = gtk_alignment_new(0.5, 0.5, 0, 0);
-    gtk_container_add(GTK_CONTAINER(align), search->box);
+    search->box = gtk_box_new(!xfce_panel_plugin_get_orientation(plugin), 0);
+    gtk_widget_set_halign(GTK_WIDGET(search->box), GTK_ALIGN_CENTER);
+    gtk_widget_set_valign(GTK_WIDGET(search->box), GTK_ALIGN_CENTER);
 
     /* default options */
     search->url = "http://bugs.debian.org/";
@@ -199,8 +198,8 @@ static t_search *search_new(XfcePanelPlugin *plugin)
     g_signal_connect(search->entry, "key-press-event", G_CALLBACK(entry_keypress_cb), search);
     g_signal_connect (search->entry, "button-press-event", G_CALLBACK(entry_buttonpress_cb), plugin);
 
-    gtk_container_add( GTK_CONTAINER(plugin), align);
-    gtk_widget_show_all(align);
+    gtk_container_add( GTK_CONTAINER(plugin), search->box);
+    gtk_widget_show_all(search->box);
 
     if (search->hide_label) {
         gtk_widget_hide(search->label);

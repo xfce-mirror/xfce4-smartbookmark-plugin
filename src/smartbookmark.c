@@ -55,7 +55,7 @@ typedef struct {
     gchar *label_text;
     gchar *url;
     gint size;
-    
+
     gboolean hide_label;
 
     /* options dialog */
@@ -103,7 +103,7 @@ static void update_search(t_search *search) {
     gtk_widget_hide(search->label);
     gtk_label_set_text(GTK_LABEL(search->label), search->label_text);
     gtk_widget_show(GTK_WIDGET(search->box));
-    if (!search->hide_label) {
+    if (search->hide_label) {
         gtk_widget_show(search->label);
     }
 }
@@ -115,7 +115,7 @@ static void search_apply_options_cb(t_search *search)
     search->url = g_strdup(gtk_entry_get_text(GTK_ENTRY(search->url_entry)));
     search->label_text = g_strdup(gtk_entry_get_text(GTK_ENTRY(search->label_entry)));
     search->size = (gint)(gtk_spin_button_get_value(GTK_SPIN_BUTTON(search->size_spinner)));
-    search->hide_label = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(search->hide_check));
+    search->hide_label = gtk_switch_get_active(GTK_SWITCH(search->hide_check));
     gtk_entry_set_width_chars(GTK_ENTRY(search->entry), search->size);
     update_search(search);
 }
@@ -134,6 +134,11 @@ static void text_entry_activate_cb(GtkWidget *widget, t_search *search)
     DBG ("text_entry_activate_cb");
     search->label_text = g_strdup(gtk_entry_get_text(GTK_ENTRY(search->label_entry)));
     update_search(search);
+}
+
+void hide_check_toggled_cb(GtkWidget *widget, gboolean is_active, t_search *search)
+{
+    gtk_widget_set_sensitive (GTK_WIDGET(search->label_entry), is_active);
 }
 
 static gboolean entry_buttonpress_cb(GtkWidget *entry, GdkEventButton *event, XfcePanelPlugin *plugin)
@@ -173,7 +178,7 @@ static t_search *search_new(XfcePanelPlugin *plugin)
 {
     t_search *search;
     gchar* filename;
-    
+
     search = g_new0(t_search, 1);
     search->box = gtk_box_new(!xfce_panel_plugin_get_orientation(plugin), 0);
     gtk_widget_set_halign(GTK_WIDGET(search->box), GTK_ALIGN_CENTER);
@@ -227,7 +232,7 @@ static void search_write_config(XfcePanelPlugin *plugin, t_search *search)
 {
     XfceRc* rcfile;
     gchar *filename = xfce_panel_plugin_save_location(plugin, TRUE);
-    
+
     if( (filename!=NULL) && (rcfile = xfce_rc_simple_open(filename, FALSE)) )
     {
         xfce_rc_set_group(rcfile, NULL);
@@ -237,12 +242,12 @@ static void search_write_config(XfcePanelPlugin *plugin, t_search *search)
         xfce_rc_write_bool_entry(rcfile, "hidelabel", search->hide_label);
         xfce_rc_flush(rcfile);
         xfce_rc_close(rcfile);
-    }   
+    }
 }
 
 static void search_set_size(XfcePanelPlugin *plugin,gint size, t_search *search)
 {
-    /* 
+    /*
     g_print("Not Unimplemented yet : search_set_size");
     do the resize of entry :) */
 };
@@ -259,12 +264,10 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
                                              GTK_DIALOG_DESTROY_WITH_PARENT,
                                              "gtk-close", GTK_RESPONSE_OK,
                                              NULL);
-    
+
     xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (search->opt_dialog), _("Preferences"));
     gtk_window_set_icon_name  (GTK_WINDOW (search->opt_dialog), "system-search");
 
-    gtk_container_set_border_width(GTK_CONTAINER (search->opt_dialog), 2);
-    
     vbox = gtk_dialog_get_content_area (GTK_DIALOG(search->opt_dialog));
 
     DBG ("Creating hbox");
@@ -281,31 +284,36 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
     search->label_entry = gtk_entry_new();
     gtk_widget_show(search->label_entry);
     gtk_box_pack_start(GTK_BOX(hbox), GTK_WIDGET(search->label_entry), FALSE, FALSE, 0);
+    gtk_widget_set_sensitive (GTK_WIDGET(search->label_entry), search->hide_label);
     /* text field */
     if(search->label_text)
         gtk_entry_set_text(GTK_ENTRY(search->label_entry), search->label_text);
     //DBG("connect signal");
     g_signal_connect (GTK_WIDGET(search->label_entry), "activate", G_CALLBACK (text_entry_activate_cb), search);
 
+    /* Hide label option */
+    search->hide_check = gtk_switch_new();
+    gtk_switch_set_active(GTK_SWITCH(search->hide_check),
+                                 search->hide_label);
+    gtk_box_pack_start(GTK_BOX(hbox), search->hide_check, FALSE, FALSE, 5);
+    gtk_widget_show(search->hide_check);
+    g_signal_connect (GTK_WIDGET(search->hide_check), "state-set", G_CALLBACK (hide_check_toggled_cb), search);
+
+    DBG ("Creating second hbox");
+    hbox = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 0);
+    gtk_widget_show(hbox);
+    gtk_box_pack_start(GTK_BOX(vbox), hbox, FALSE, FALSE, 5);
     /* size label */
     sizelabel = gtk_label_new(_("Size:"));
     gtk_widget_show(sizelabel);
     gtk_box_pack_start(GTK_BOX(hbox), sizelabel, FALSE, FALSE, 5);
-
     /* size spinner */
     GtkAdjustment* spinner_adj = gtk_adjustment_new (search->size, 2.0, 10.0, 1.0, 5.0, 0);
     search->size_spinner = gtk_spin_button_new(GTK_ADJUSTMENT(spinner_adj), 1.0, 0);
     gtk_box_pack_start(GTK_BOX(hbox), search->size_spinner, FALSE, FALSE, 0);
     gtk_widget_show(search->size_spinner);
 
-    /* Hide label option */
-    search->hide_check = gtk_check_button_new_with_label(_("Hide label"));
-    gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(search->hide_check), 
-                                 search->hide_label);
-    gtk_box_pack_start(GTK_BOX(hbox), search->hide_check, FALSE, FALSE, 5);
-    gtk_widget_show(search->hide_check);
-
-    DBG ("Creating second hbox");
+    DBG ("Creating third hbox");
     hbox = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 0);
     gtk_widget_show(hbox);
     gtk_box_pack_start(GTK_BOX(vbox), hbox, FALSE, FALSE, 5);
@@ -323,7 +331,7 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
         gtk_entry_set_text(GTK_ENTRY(search->url_entry), search->url);
     g_signal_connect (GTK_WIDGET(search->url_entry), "activate", G_CALLBACK (url_entry_activate_cb), search);
     gtk_box_pack_start(GTK_BOX(hbox), GTK_WIDGET(search->url_entry), FALSE, FALSE, 0);
-    
+
     gtk_dialog_run (GTK_DIALOG(search->opt_dialog));
     search_apply_options_cb(search);
     gtk_widget_destroy(search->opt_dialog);
@@ -351,4 +359,3 @@ smartbookmark_construct(XfcePanelPlugin *plugin)
     g_signal_connect (plugin, "configure-plugin",
                       G_CALLBACK (search_create_options), search);
 }
-

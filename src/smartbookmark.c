@@ -294,7 +294,7 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
     gtk_box_pack_start(GTK_BOX(hbox), sizelabel, FALSE, FALSE, 5);
 
     /* size spinner */
-    GtkObject* spinner_adj = gtk_adjustment_new (search->size, 2.0, 10.0, 1.0, 5.0, 0);
+    GtkAdjustment* spinner_adj = gtk_adjustment_new (search->size, 2.0, 10.0, 1.0, 5.0, 0);
     search->size_spinner = gtk_spin_button_new(GTK_ADJUSTMENT(spinner_adj), 1.0, 0);
     gtk_box_pack_start(GTK_BOX(hbox), search->size_spinner, FALSE, FALSE, 0);
     gtk_widget_show(search->size_spinner);

@@ -250,7 +250,7 @@ static void search_set_size(XfcePanelPlugin *plugin,gint size, t_search *search)
 /* options dialog */
 static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
 {
-    GtkWidget *hbox, *vbox, *header;
+    GtkWidget *hbox, *vbox;
     xfce_panel_plugin_block_menu(plugin);
     GtkWidget *urllabel, *textlabel, *sizelabel;
     DBG ("search_create_options");

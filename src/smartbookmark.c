@@ -293,6 +293,7 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
 
     /* Hide label option */
     search->hide_check = gtk_switch_new();
+    gtk_widget_set_tooltip_text(GTK_WIDGET(search->hide_check),_("Hide label"));
     gtk_switch_set_active(GTK_SWITCH(search->hide_check),
                                  search->hide_label);
     gtk_box_pack_start(GTK_BOX(hbox), search->hide_check, FALSE, FALSE, 5);

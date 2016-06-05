@@ -1,3 +1,194 @@
+commit 67b9f8f0c6e521eb3425e3b498dcad48ef5e7b14
+Author: Landry Breuil <landry@xfce.org>
+Date:   Sun Jun 5 16:45:15 2016 +0200
+
+    Use a grid instead of packing boxes into boxes
+
+commit 8ecff935f5bc2a8fba9d29a2c0cd055425924bf8
+Author: Robert Antoni Buj i Gelonch <rbuj@fedoraproject.org>
+Date:   Wed May 4 18:32:20 2016 +0200
+
+    I18n: Update translation ca (100%).
+    
+    9 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit 6be4a7543e4def0bfbe0fc2babfca51fd684f8a2
+Author: Robert Antoni Buj i Gelonch <rbuj@fedoraproject.org>
+Date:   Mon May 2 00:35:53 2016 +0200
+
+    I18n: Update translation ca (100%).
+    
+    9 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit 36fb61845e71ec58d65dddebb906a9489931d313
+Author: Landry Breuil <landry@xfce.org>
+Date:   Fri Apr 29 09:43:28 2016 +0200
+
+    reuse label to set tooltip on the GtkSwitch for clarity
+
+commit 7f0fc7d5b3c2ff33985c166633d50f292f34e596
+Author: Simon Steinbeiss <simon.steinbeiss@elfenbeinturm.at>
+Date:   Thu Apr 28 23:07:49 2016 +0200
+
+    Improve the settings dialog
+    
+    Signed-off-by: Landry Breuil <landry@xfce.org>
+
+commit 64eec93e0cfc3beb969b36011567ebd3401dfee3
+Author: Landry Breuil <landry@xfce.org>
+Date:   Thu Apr 28 11:50:25 2016 +0200
+
+    properly give a parent to the option dialog
+
+commit f1062268ad1fc644d4d8d87a4d7fdf535a85337b
+Author: Landry Breuil <landry@xfce.org>
+Date:   Thu Apr 28 11:47:18 2016 +0200
+
+    Use gtk_dialog_get_content_area() instead of adding an intermediate useless GtkVBox
+    
+    We cant access the vbox private member anyway.
+
+commit af7d368d10cf1889d8d95ef7c0ce28bb3b4d68ac
+Author: Landry Breuil <landry@xfce.org>
+Date:   Thu Apr 28 11:46:49 2016 +0200
+
+    Use GtkBox with GTK_ORIENTATION_HORIZONTAL instead of GtkHBox
+
+commit f8361fc44c661b81a58cf90b08bf59e125566032
+Author: Landry Breuil <landry@xfce.org>
+Date:   Thu Apr 28 11:46:25 2016 +0200
+
+    Use the correct type for GtkAdjustment
+
+commit de9849ee076470b6d233dd19eac56fbd259b6907
+Author: Landry Breuil <landry@xfce.org>
+Date:   Thu Apr 28 11:42:15 2016 +0200
+
+    GTK_DIALOG_NO_SEPARATOR was removed, and replace GTK_STOCK_CLOSE by "gtk-close"
+
+commit 1d2c46e7feb0b734096aac82b1918cc23d703ec9
+Author: Landry Breuil <landry@xfce.org>
+Date:   Thu Apr 28 11:41:45 2016 +0200
+
+    Remove unused variable
+
+commit 68ccac81fedd8bb7ccee05f4a18902f7bd8d1f1a
+Author: Landry Breuil <landry@xfce.org>
+Date:   Thu Apr 28 11:40:47 2016 +0200
+
+    Stop using GtkAlignment and XfceHVBox, use a plain GtkBox and set halign/valign
+
+commit 5873690fb9d4aa9a4d72fb7fa0f3ae86e5e418fa
+Author: Landry Breuil <landry@xfce.org>
+Date:   Thu Apr 28 11:40:02 2016 +0200
+
+    Use the correct GDK_KEY defines
+
+commit 411669f522812d2614adc843b872aa6d76f4080b
+Author: Landry Breuil <landry@xfce.org>
+Date:   Thu Apr 28 11:39:33 2016 +0200
+
+    Don't access window member directly, use gtk_widget_get_window() instead
+
+commit 664f7b63c557e8ec252915cdcec54692c1b46d37
+Author: Landry Breuil <landry@xfce.org>
+Date:   Thu Apr 28 11:38:59 2016 +0200
+
+    Set X-XFCE-API=2.0 in desktop file
+
+commit a749f697f6068eaeefe6032b325b819b962fef4d
+Author: Landry Breuil <landry@xfce.org>
+Date:   Thu Apr 28 11:38:33 2016 +0200
+
+    Bump dependencies to check for libxfce4ui-2/libxfce4panel-2.0.
+
+commit 277427fd46e64309369642c1f9f1d61bbc818f3f
+Author: Davidmp <medipas@gmail.com>
+Date:   Fri Apr 1 18:31:56 2016 +0200
+
+    I18n: Update translation ca (100%).
+    
+    9 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit bf17ad30bad0513559db48a0974c448b7702ee8a
+Author: Elishai Eliyahu <e1907@mm.st>
+Date:   Mon Feb 8 00:31:57 2016 +0100
+
+    I18n: Add new translation he (100%).
+    
+    9 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit d0a036474daf4e8a8aa21b2407585bc6c05cb618
+Author: Anonymous <noreply@xfce.org>
+Date:   Mon Sep 21 00:32:40 2015 +0200
+
+    I18n: Update translation lt (100%).
+    
+    9 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit 426677a46cc5f38e1227b389aaf4ebbe1454d524
+Author: Anonymous <noreply@xfce.org>
+Date:   Tue Jul 21 18:32:15 2015 +0200
+
+    I18n: Update translation lt (100%).
+    
+    9 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit 5311666e2040ed53ec37493ddcfbfe02866c9c33
+Author: Påvel Nicklasson <pavelnicklasson@bahnhof.se>
+Date:   Mon Jul 20 00:35:04 2015 +0200
+
+    I18n: Update translation sv (100%).
+    
+    9 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit e3b5ceba863f332aef40b6936404d73d7463cab9
+Author: Anonymous <noreply@xfce.org>
+Date:   Wed Apr 29 00:31:48 2015 +0200
+
+    I18n: Update translation lt (100%).
+    
+    9 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit 7faebc8def80db9306a11ca3ce8dada987729100
+Merge: 6110398 c32d86f
+Author: Landry Breuil <landry@xfce.org>
+Date:   Mon Mar 23 22:11:02 2015 +0100
+
+    Merge branch 'master' of git://git.xfce.org/panel-plugins/xfce4-smartbookmark-plugin
+
+commit c32d86f753271100cf11a3f7b116e236eb865916
+Author: Efstathios Iosifidis <iefstathios@gmail.com>
+Date:   Thu Mar 19 12:32:00 2015 +0100
+
+    I18n: Update translation el (100%).
+    
+    9 translated messages.
+    
+    Transifex (https://www.transifex.com/projects/p/xfce/).
+
+commit 6110398d0665530f2c7ceb34a43c355ba34bf66f
+Author: Landry Breuil <landry@xfce.org>
+Date:   Mon Mar 9 22:27:46 2015 +0100
+
+    rly update changelog again
+
 commit 7715b965df394afd318156d2856e39e933aee172
 Author: Landry Breuil <landry@xfce.org>
 Date:   Mon Mar 9 22:26:28 2015 +0100

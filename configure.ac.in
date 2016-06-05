@@ -1,7 +1,7 @@
 dnl Version information
 m4_define([smartbookmark_version_major], [0])
 m4_define([smartbookmark_version_minor], [4])
-m4_define([smartbookmark_version_micro], [6])
+m4_define([smartbookmark_version_micro], [99])
 m4_define([smartbookmark_version],
     [smartbookmark_version_major.smartbookmark_version_minor.smartbookmark_version_micro])
 

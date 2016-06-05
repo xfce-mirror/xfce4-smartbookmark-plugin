@@ -1,3 +1,7 @@
+0.4.99 : 2016/06/05
+=====
+- port to gtk+3/libxfce4ui-2/libxfce4panel-2.0
+
 0.4.6 : 2015/03/09
 =====
 - Remove the GtkEventBox and use an XfceHVBox instead

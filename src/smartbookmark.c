@@ -96,36 +96,11 @@ static gboolean do_search(const char *url, const char *keyword)
 }
 
 
-/* redraw the plugin */
-static void update_search(t_search *search) {
-    DBG ("Update search");
-    gtk_widget_hide(GTK_WIDGET(search->box));
-    gtk_widget_hide(search->label);
-    gtk_label_set_text(GTK_LABEL(search->label), search->label_text);
-    gtk_widget_show(GTK_WIDGET(search->box));
-    if (search->hide_label) {
-        gtk_widget_show(search->label);
-    }
-}
-
-/* apply the new values to: url, label_text, size */
-static void search_apply_options_cb(t_search *search)
-{
-    DBG ("Apply options");
-    search->url = g_strdup(gtk_entry_get_text(GTK_ENTRY(search->url_entry)));
-    search->label_text = g_strdup(gtk_entry_get_text(GTK_ENTRY(search->label_entry)));
-    search->size = (gint)(gtk_spin_button_get_value(GTK_SPIN_BUTTON(search->size_spinner)));
-    search->hide_label = gtk_switch_get_active(GTK_SWITCH(search->hide_check));
-    gtk_entry_set_width_chars(GTK_ENTRY(search->entry), search->size);
-    update_search(search);
-}
-
 /* callback: apply the new value to the url string */
 static void url_entry_activate_cb(GtkWidget *widget, t_search *search)
 {
     DBG ("Activate url_entry");
     search->url = g_strdup(gtk_entry_get_text(GTK_ENTRY(search->url_entry)));
-    update_search(search);
 }
 
 /* callback: apply the new value to the label_text string */
@@ -338,7 +313,6 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
 
     gtk_widget_show_all(search->opt_dialog);
     gtk_dialog_run (GTK_DIALOG(search->opt_dialog));
-    search_apply_options_cb(search);
     gtk_widget_destroy(search->opt_dialog);
     xfce_panel_plugin_unblock_menu(plugin);
     search_write_config(plugin, search);

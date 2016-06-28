@@ -144,9 +144,14 @@ static void entry_size_changed_cb(GtkWidget *widget, t_search *search)
     gtk_entry_set_width_chars(GTK_ENTRY(search->entry), search->size);
 }
 
-void hide_check_toggled_cb(GtkWidget *widget, gboolean is_active, t_search *search)
+static gboolean hide_check_toggled_cb(GtkWidget *widget, gboolean is_active, t_search *search)
 {
-    gtk_widget_set_sensitive (GTK_WIDGET(search->label_entry), is_active);
+    DBG ("hide_check_toggled_cb");
+    search->hide_label = is_active;
+    gtk_widget_set_sensitive (GTK_WIDGET(search->label_entry), !is_active);
+    gtk_widget_set_visible (search->label, !is_active);
+    gtk_switch_set_state(GTK_SWITCH(search->hide_check), is_active);
+    return TRUE;
 }
 
 static gboolean entry_buttonpress_cb(GtkWidget *entry, GdkEventButton *event, XfcePanelPlugin *plugin)
@@ -293,7 +298,7 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
     search->label_entry = gtk_entry_new();
     gtk_widget_show(search->label_entry);
     gtk_grid_attach(GTK_GRID(grid), GTK_WIDGET(search->label_entry), 1, 0, 1, 1);
-    gtk_widget_set_sensitive (GTK_WIDGET(search->label_entry), search->hide_label);
+    gtk_widget_set_sensitive (GTK_WIDGET(search->label_entry), !search->hide_label);
     /* text field */
     if(search->label_text)
         gtk_entry_set_text(GTK_ENTRY(search->label_entry), search->label_text);

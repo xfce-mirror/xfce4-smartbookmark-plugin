@@ -133,7 +133,15 @@ static void text_entry_activate_cb(GtkWidget *widget, t_search *search)
 {
     DBG ("text_entry_activate_cb");
     search->label_text = g_strdup(gtk_entry_get_text(GTK_ENTRY(search->label_entry)));
-    update_search(search);
+    gtk_label_set_text(GTK_LABEL(search->label), search->label_text);
+}
+
+/* callback: apply the new size to the entry widget */
+static void entry_size_changed_cb(GtkWidget *widget, t_search *search)
+{
+    DBG ("entry_size_changed_cb");
+    search->size = gtk_spin_button_get_value_as_int(GTK_SPIN_BUTTON(search->size_spinner));
+    gtk_entry_set_width_chars(GTK_ENTRY(search->entry), search->size);
 }
 
 void hide_check_toggled_cb(GtkWidget *widget, gboolean is_active, t_search *search)
@@ -307,6 +315,7 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
     GtkAdjustment* spinner_adj = gtk_adjustment_new (search->size, 2.0, 30.0, 1.0, 5.0, 0);
     search->size_spinner = gtk_spin_button_new(GTK_ADJUSTMENT(spinner_adj), 1.0, 0);
     gtk_grid_attach(GTK_GRID(grid), GTK_WIDGET(search->size_spinner), 1, 1, 1, 1);
+    g_signal_connect (GTK_WIDGET(search->size_spinner), "value-changed", G_CALLBACK (entry_size_changed_cb), search);
 
     /* url label */
     urllabel = gtk_label_new(_("URL:  "));

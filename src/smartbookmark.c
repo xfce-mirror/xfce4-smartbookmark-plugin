@@ -304,7 +304,7 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
     sizelabel = gtk_label_new(_("Size:"));
     gtk_grid_attach(GTK_GRID(grid), sizelabel, 0, 1, 1, 1);
     /* size spinner */
-    GtkAdjustment* spinner_adj = gtk_adjustment_new (search->size, 2.0, 10.0, 1.0, 5.0, 0);
+    GtkAdjustment* spinner_adj = gtk_adjustment_new (search->size, 2.0, 30.0, 1.0, 5.0, 0);
     search->size_spinner = gtk_spin_button_new(GTK_ADJUSTMENT(spinner_adj), 1.0, 0);
     gtk_grid_attach(GTK_GRID(grid), GTK_WIDGET(search->size_spinner), 1, 1, 1, 1);
 

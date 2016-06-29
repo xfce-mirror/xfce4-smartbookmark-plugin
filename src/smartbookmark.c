@@ -97,16 +97,16 @@ static gboolean do_search(const char *url, const char *keyword)
 
 
 /* callback: apply the new value to the url string */
-static void url_entry_activate_cb(GtkWidget *widget, t_search *search)
+static void url_entry_changed_cb(GtkWidget *widget, t_search *search)
 {
-    DBG ("Activate url_entry");
+    DBG ("url_entry_changed_cb");
     search->url = g_strdup(gtk_entry_get_text(GTK_ENTRY(search->url_entry)));
 }
 
 /* callback: apply the new value to the label_text string */
-static void text_entry_activate_cb(GtkWidget *widget, t_search *search)
+static void text_entry_changed_cb(GtkWidget *widget, t_search *search)
 {
-    DBG ("text_entry_activate_cb");
+    DBG ("text_entry_changed_cb");
     search->label_text = g_strdup(gtk_entry_get_text(GTK_ENTRY(search->label_entry)));
     gtk_label_set_text(GTK_LABEL(search->label), search->label_text);
 }
@@ -278,7 +278,7 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
     if(search->label_text)
         gtk_entry_set_text(GTK_ENTRY(search->label_entry), search->label_text);
     //DBG("connect signal");
-    g_signal_connect (GTK_WIDGET(search->label_entry), "activate", G_CALLBACK (text_entry_activate_cb), search);
+    g_signal_connect (GTK_WIDGET(search->label_entry), "changed", G_CALLBACK (text_entry_changed_cb), search);
 
     /* Hide label option */
     search->hide_check = gtk_switch_new();
@@ -308,7 +308,7 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
     /* url field */
     if(search->url!=NULL)
         gtk_entry_set_text(GTK_ENTRY(search->url_entry), search->url);
-    g_signal_connect (GTK_WIDGET(search->url_entry), "activate", G_CALLBACK (url_entry_activate_cb), search);
+    g_signal_connect (GTK_WIDGET(search->url_entry), "changed", G_CALLBACK (url_entry_changed_cb), search);
     gtk_grid_attach(GTK_GRID(grid), GTK_WIDGET(search->url_entry), 1, 2, 2, 1);
 
     gtk_widget_show_all(search->opt_dialog);

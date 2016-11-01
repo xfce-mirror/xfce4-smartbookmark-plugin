@@ -1,3 +1,47 @@
+commit 4ef680fdfea8cc7967ae5c1b2f28f1de9f11c00d
+Author: Landry Breuil <landry@xfce.org>
+Date:   Wed Jun 29 20:58:51 2016 +0200
+
+    Fix value changes saving in prefs dialog (#12666)
+    
+    Connect the callbacks to the 'changed' signal instead of the 'activate' signal which
+    is only called upon Enter. This way, the label is updated live on the panel,
+    and the url is properly saved when exiting the prefs dialog.
+
+commit b757a777ed4390e1a8784ddc6be62804a14179f9
+Author: Landry Breuil <landry@xfce.org>
+Date:   Tue Jun 28 21:45:55 2016 +0200
+
+    Now that each dialog widget is connected to its own callback, drop useless update_search() & search_apply_options_cb() methods
+
+commit 060fa1d41be2416b8170e2d9d5015d7860beb66a
+Author: Landry Breuil <landry@xfce.org>
+Date:   Tue Jun 28 21:44:31 2016 +0200
+
+    Fix boolean logic in GtkSwitch use
+    
+    Properly set the switch state after applying label visibility and entry sensitivity
+
+commit 5c274bb943d5a1d2dbebeff63cb144eae6226484
+Author: Landry Breuil <landry@xfce.org>
+Date:   Tue Jun 28 21:43:29 2016 +0200
+
+    Connect value-changed signal to a callback that directly resizes the entry on the panel
+    
+    While here, directly set the label text in text_entry_activate_cb()
+
+commit 0fca244ace9ac37e08605ac32bcadeb6bb2da88c
+Author: Landry Breuil <landry@xfce.org>
+Date:   Tue Jun 28 21:42:46 2016 +0200
+
+    Set the max size spinner value to 30 chars
+
+commit ae28b4496f3509892337612eca7619ab8d54e537
+Author: Landry Breuil <landry@xfce.org>
+Date:   Sun Jun 5 17:35:49 2016 +0200
+
+    Release 0.4.99
+
 commit 67b9f8f0c6e521eb3425e3b498dcad48ef5e7b14
 Author: Landry Breuil <landry@xfce.org>
 Date:   Sun Jun 5 16:45:15 2016 +0200
@@ -1133,7 +1177,7 @@ Date:   Fri Jul 24 16:14:42 2009 +0000
 
     2009-07-24  Gabor Kelemen  <kelemeng@gnome.hu>
     
-    	* hu.po: Translation reworked.
+            * hu.po: Translation reworked.
     
     (Old svn revision: 7808)
 
@@ -1214,45 +1258,45 @@ Author: Alexander Toresson <alexander.toresson@gmail.com>
 Date:   Sat Dec 20 21:52:03 2008 +0000
 
     xfce4-taskmanager/trunk/po:
-    	* sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
+            * sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
     xfce4-time-out-plugin/trunk/po:
-    	* sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
+            * sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
     xfce4-wavelan-plugin/trunk/po:
-    	* sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
+            * sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
     xfce4-radio-plugin/trunk/po:
-    	* sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
+            * sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
     xfce4-datetime-plugin/trunk/po:
-    	* sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
+            * sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
     xfce4-cpufreq-plugin/trunk/po:
-    	* sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
+            * sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
     xfburn/trunk/po:
-    	* sv.po: Swedish translation update (Daniel Nylander)
+            * sv.po: Swedish translation update (Daniel Nylander)
     xfce4-xkb-plugin/trunk/po:
-    	* sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
+            * sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
     xfce4-smartbookmark-plugin/trunk/po:
-    	* sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
+            * sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
     xfce4-smartpm-plugin/trunk/po:
-    	* sv.po: Swedish translation update (Daniel Nylander)
+            * sv.po: Swedish translation update (Daniel Nylander)
     thunar-media-tags-plugin/trunk/po:
-    	* sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
+            * sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
     xfvnc/trunk/po:
-    	* sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
+            * sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
     xfce4-verve-plugin/trunk/po:
-    	* sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
+            * sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
     xfce4-xfapplet-plugin/trunk/po:
-    	* sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
+            * sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
     thunar-archive-plugin/trunk/po:
-    	* sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
+            * sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
     xfce4-websearch-plugin/trunk/po:
-    	* sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
+            * sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
     xfce4-screenshooter-plugin/trunk/po:
-    	* sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
+            * sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
     xfce4-teatime-plugin/trunk/po:
-    	* sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
+            * sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
     xfce4-rss-plugin/trunk/po:
-    	* sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
+            * sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
     xfmpc/trunk/po:
-    	* sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
+            * sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
     
     (Old svn revision: 6343)
 
@@ -1331,7 +1375,7 @@ commit 3fcd698cee812e25ad5475b1451e1f8baf89128d
 Author: Lars Nielsen <lars@mit-web.dk>
 Date:   Thu Oct 2 20:01:48 2008 +0000
 
-    	* da.po: Danish translation update
+            * da.po: Danish translation update
     
     
     
@@ -1502,7 +1546,7 @@ Date:   Mon Jul 14 06:56:08 2008 +0000
 
     Maxim Dziumanenko <dziumanenko@gmail.com>
     
-    	* Update Ukrainian translatioon
+            * Update Ukrainian translatioon
     
     
     

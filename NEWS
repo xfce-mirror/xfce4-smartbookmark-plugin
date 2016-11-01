@@ -1,3 +1,8 @@
+0.5.0 : 2016/11/01
+=====
+- Fix value changes saving in prefs dialog (#12666)
+- Fix boolean logic in GtkSwitch use
+
 0.4.99 : 2016/06/05
 =====
 - port to gtk+3/libxfce4ui-2/libxfce4panel-2.0

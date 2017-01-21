@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-03 21:17+0200\n"
-"PO-Revision-Date: 2017-01-17 09:37+0000\n"
+"PO-Revision-Date: 2017-01-21 19:37+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/xfce-panel-plugins/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -37,7 +37,7 @@ msgstr "Indstillinger"
 #. text label
 #: ../src/smartbookmark.c:279
 msgid "Label:"
-msgstr "Mærkat:"
+msgstr "Etiket:"
 
 #. size label
 #: ../src/smartbookmark.c:294
@@ -47,7 +47,7 @@ msgstr "Størrelse:"
 #. Hide label option
 #: ../src/smartbookmark.c:305
 msgid "Hide label"
-msgstr "Skjul mærkat"
+msgstr "Skjul etiket"
 
 #. url label
 #: ../src/smartbookmark.c:316

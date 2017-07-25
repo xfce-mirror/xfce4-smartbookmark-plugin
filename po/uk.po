@@ -1,59 +1,60 @@
-# Ukrainian translation of xfce4-smartbookmark-plugin.
-# Copyright (C) 2008 Dmitry Nikitin
-# This file is distributed under the same license as the xfce4-smartbookmark-plugin package.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # 
-# Dmitry Nikitin <luckas_fb@mail.ru>, 2008.
+# Translators:
+# Dmitry Nikitin <luckas_fb@mail.ru>, 2008
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-smartbookmark-plugin\n"
+"Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-06 20:33+0000\n"
-"PO-Revision-Date: 2008-07-09 14:18+0300\n"
-"Last-Translator: Dmitry Nikitin <luckas_fb@mail.ru>\n"
-"Language-Team: Ukrainian <xfce4-dev@xfce.org>\n"
+"POT-Creation-Date: 2013-07-03 21:17+0200\n"
+"PO-Revision-Date: 2017-07-25 11:28+0000\n"
+"Last-Translator: Nick Schermer <nick@xfce.org>\n"
+"Language-Team: Ukrainian (http://www.transifex.com/xfce/xfce-panel-plugins/language/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: uk\n"
-"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../src/smartbookmark.c:90
 #, c-format
 msgid "Failed to send %s to your preferred browser"
 msgstr "Не вдалося вислати %s до Вашого улюбленого переглядача"
 
-#: ../src/smartbookmark.c:296
+#: ../src/smartbookmark.c:259
 msgid "Smartbookmark"
 msgstr "Кмітливі закладки"
 
-#: ../src/smartbookmark.c:301
+#: ../src/smartbookmark.c:264
 msgid "Preferences"
 msgstr "Властивості"
 
 #. text label
-#: ../src/smartbookmark.c:316
+#: ../src/smartbookmark.c:279
 msgid "Label:"
 msgstr "Мітка:"
 
 #. size label
-#: ../src/smartbookmark.c:331
+#: ../src/smartbookmark.c:294
 msgid "Size:"
 msgstr "Розмір:"
 
 #. Hide label option
-#: ../src/smartbookmark.c:342
+#: ../src/smartbookmark.c:305
 msgid "Hide label"
 msgstr "Ховати мітку"
 
 #. url label
-#: ../src/smartbookmark.c:353
+#: ../src/smartbookmark.c:316
 msgid "URL:  "
 msgstr "Посилання URL:  "
 
 #: ../src/smartbookmark.desktop.in.h:1
-msgid "Query websites from the Xfce panel"
-msgstr "Звернення до веб-сайтів з панелі Xfce"
-
-#: ../src/smartbookmark.desktop.in.h:2
 msgid "SmartBookmark"
 msgstr "Кмітливі закладки"
+
+#: ../src/smartbookmark.desktop.in.h:2
+msgid "Query websites from the Xfce panel"
+msgstr "Звернення до веб-сайтів з панелі Xfce"

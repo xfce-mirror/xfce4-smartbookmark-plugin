@@ -3,6 +3,8 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Charles Monzat <superboa@hotmail.fr>, 2018
+# jc1 <jc1.quebecos@gmail.com>, 2013
 # jc1 <jc1.quebecos@gmail.com>, 2013
 # Urien Desterres <urien.desterres@gmail.com>, 2014
 # Yannick Le Guen <leguen.yannick@gmail.com>, 2014
@@ -12,7 +14,7 @@ msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-03 21:17+0200\n"
-"PO-Revision-Date: 2018-03-16 22:42+0000\n"
+"PO-Revision-Date: 2018-03-17 22:52+0000\n"
 "Last-Translator: Charles Monzat <superboa@hotmail.fr>\n"
 "Language-Team: French (http://www.transifex.com/xfce/xfce-panel-plugins/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +26,7 @@ msgstr ""
 #: ../src/smartbookmark.c:90
 #, c-format
 msgid "Failed to send %s to your preferred browser"
-msgstr "Impossible d'envoyer %s à votre navigateur préféré"
+msgstr "Impossible d’envoyer %s à votre navigateur préféré"
 
 #: ../src/smartbookmark.c:259
 msgid "Smartbookmark"
@@ -37,12 +39,12 @@ msgstr "Préférences"
 #. text label
 #: ../src/smartbookmark.c:279
 msgid "Label:"
-msgstr "Étiquette :"
+msgstr "Étiquette :"
 
 #. size label
 #: ../src/smartbookmark.c:294
 msgid "Size:"
-msgstr "Taille :"
+msgstr "Taille :"
 
 #. Hide label option
 #: ../src/smartbookmark.c:305
@@ -52,7 +54,7 @@ msgstr "Masquer l’étiquette"
 #. url label
 #: ../src/smartbookmark.c:316
 msgid "URL:  "
-msgstr "URL :  "
+msgstr "URL :  "
 
 #: ../src/smartbookmark.desktop.in.h:1
 msgid "SmartBookmark"
@@ -60,4 +62,4 @@ msgstr "SmartBookmark"
 
 #: ../src/smartbookmark.desktop.in.h:2
 msgid "Query websites from the Xfce panel"
-msgstr "Interroger des sites web depuis le tableau de bord Xfce"
+msgstr "Interroger des sites Web depuis le tableau de bord Xfce"

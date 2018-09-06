@@ -259,18 +259,20 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
     vbox = gtk_dialog_get_content_area (GTK_DIALOG(search->opt_dialog));
 
     grid = gtk_grid_new();
-    gtk_grid_set_column_spacing (GTK_GRID(grid), 5);
-    gtk_grid_set_row_spacing (GTK_GRID(grid), 5);
-    gtk_container_set_border_width(GTK_CONTAINER(grid), 6);
+    gtk_grid_set_column_spacing (GTK_GRID(grid), 12);
+    gtk_grid_set_row_spacing (GTK_GRID(grid), 6);
+    gtk_container_set_border_width(GTK_CONTAINER(grid), 12);
     gtk_box_pack_start(GTK_BOX(vbox), grid, FALSE, FALSE, 0);
 
     /* text label */
     textlabel = gtk_label_new(_("Label:"));
+    gtk_label_set_xalign (GTK_LABEL (textlabel), 0.0f);
     gtk_widget_show(textlabel);
     gtk_grid_attach(GTK_GRID(grid), textlabel, 0, 0, 1, 1);
 
     /* text entry */
     search->label_entry = gtk_entry_new();
+    gtk_widget_set_hexpand (GTK_WIDGET (search->label_entry), TRUE);
     gtk_widget_show(search->label_entry);
     gtk_grid_attach(GTK_GRID(grid), GTK_WIDGET(search->label_entry), 1, 0, 1, 1);
     gtk_widget_set_sensitive (GTK_WIDGET(search->label_entry), !search->hide_label);
@@ -283,24 +285,18 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
     /* Hide label option */
     search->hide_check = gtk_switch_new();
     gtk_widget_set_tooltip_text(GTK_WIDGET(search->hide_check),_("Hide label"));
+    gtk_widget_set_valign (GTK_WIDGET (search->hide_check), GTK_ALIGN_CENTER);
+    gtk_widget_set_vexpand (GTK_WIDGET (search->hide_check), FALSE);
     gtk_switch_set_active(GTK_SWITCH(search->hide_check),
                                  search->hide_label);
     gtk_grid_attach(GTK_GRID(grid), GTK_WIDGET(search->hide_check), 2, 0, 1, 1);
     g_signal_connect (GTK_WIDGET(search->hide_check), "state-set", G_CALLBACK (hide_check_toggled_cb), search);
 
-    /* size label */
-    sizelabel = gtk_label_new(_("Size:"));
-    gtk_grid_attach(GTK_GRID(grid), sizelabel, 0, 1, 1, 1);
-    /* size spinner */
-    GtkAdjustment* spinner_adj = gtk_adjustment_new (search->size, 2.0, 30.0, 1.0, 5.0, 0);
-    search->size_spinner = gtk_spin_button_new(GTK_ADJUSTMENT(spinner_adj), 1.0, 0);
-    gtk_grid_attach(GTK_GRID(grid), GTK_WIDGET(search->size_spinner), 1, 1, 1, 1);
-    g_signal_connect (GTK_WIDGET(search->size_spinner), "value-changed", G_CALLBACK (entry_size_changed_cb), search);
-
     /* url label */
     urllabel = gtk_label_new(_("URL:  "));
+    gtk_label_set_xalign (GTK_LABEL (urllabel), 0.0f);
     gtk_label_set_use_markup(GTK_LABEL(urllabel), TRUE);
-    gtk_grid_attach(GTK_GRID(grid), urllabel, 0, 2, 1, 1);
+    gtk_grid_attach(GTK_GRID(grid), urllabel, 0, 1, 1, 1);
     /* url entry */
     search->url_entry = gtk_entry_new();
     gtk_entry_set_width_chars(GTK_ENTRY(search->url_entry), 42);
@@ -309,7 +305,18 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
     if(search->url!=NULL)
         gtk_entry_set_text(GTK_ENTRY(search->url_entry), search->url);
     g_signal_connect (GTK_WIDGET(search->url_entry), "changed", G_CALLBACK (url_entry_changed_cb), search);
-    gtk_grid_attach(GTK_GRID(grid), GTK_WIDGET(search->url_entry), 1, 2, 2, 1);
+    gtk_grid_attach(GTK_GRID(grid), GTK_WIDGET(search->url_entry), 1, 1, 2, 1);
+
+    /* size label */
+    sizelabel = gtk_label_new(_("Size:"));
+    gtk_label_set_xalign (GTK_LABEL (sizelabel), 0.0f);
+    gtk_grid_attach(GTK_GRID(grid), sizelabel, 0, 2, 1, 1);
+    /* size spinner */
+    GtkAdjustment* spinner_adj = gtk_adjustment_new (search->size, 2.0, 30.0, 1.0, 5.0, 0);
+    search->size_spinner = gtk_spin_button_new(GTK_ADJUSTMENT(spinner_adj), 1.0, 0);
+    gtk_widget_set_halign (GTK_WIDGET (search->size_spinner), GTK_ALIGN_START);
+    gtk_grid_attach(GTK_GRID(grid), GTK_WIDGET(search->size_spinner), 1, 2, 1, 1);
+    g_signal_connect (GTK_WIDGET(search->size_spinner), "value-changed", G_CALLBACK (entry_size_changed_cb), search);
 
     gtk_widget_show_all(search->opt_dialog);
     gtk_dialog_run (GTK_DIALOG(search->opt_dialog));

@@ -6,13 +6,13 @@
 # Chris Darnell <chris@cedeel.com>, 2013
 # Jens Hyllegaard <jens.hyllegaard@gmail.com>, 2007
 # Per Kongstad <p_kongstad@op.pl>, 2008
-# scootergrisen, 2017
+# scootergrisen, 2017,2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-03 21:17+0200\n"
-"PO-Revision-Date: 2017-11-03 14:44+0000\n"
+"PO-Revision-Date: 2019-05-04 15:43+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/xfce-panel-plugins/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgstr "Kunne ikke sende %s til din foretrukne browser"
 
 #: ../src/smartbookmark.c:259
 msgid "Smartbookmark"
-msgstr "Smart-bogmærke"
+msgstr "Smartbogmærke"
 
 #: ../src/smartbookmark.c:264
 msgid "Preferences"
@@ -56,7 +56,7 @@ msgstr "URL:  "
 
 #: ../src/smartbookmark.desktop.in.h:1
 msgid "SmartBookmark"
-msgstr "Smart-bogmærke"
+msgstr "Smartbogmærke"
 
 #: ../src/smartbookmark.desktop.in.h:2
 msgid "Query websites from the Xfce panel"

@@ -4,12 +4,13 @@
 # 
 # Translators:
 # Ammuu5, 2017
+# Jiri Grönroos <jiri.gronroos@iki.fi>, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-03 21:17+0200\n"
-"PO-Revision-Date: 2019-07-16 20:46+0000\n"
+"PO-Revision-Date: 2019-07-17 08:50+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish (http://www.transifex.com/xfce/xfce-panel-plugins/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -57,4 +58,4 @@ msgstr ""
 
 #: ../src/smartbookmark.desktop.in.h:2
 msgid "Query websites from the Xfce panel"
-msgstr ""
+msgstr "Suorita kyselyjä verkkosivuille Xfce:n paneelista"

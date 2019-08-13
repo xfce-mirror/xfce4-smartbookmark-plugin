@@ -1,3 +1,9 @@
+0.5.1 : 2019/09/13
+=====
+- Preferences: Improve spacing and layout (bug #14675)
+- New translations for be, ku, fi
+- Lots of translation updates
+
 0.5.0 : 2016/11/01
 =====
 - Fix value changes saving in prefs dialog (#12666)

@@ -2,9 +2,9 @@ CONFIGURATION
 -------------
 Some URL examples:
 
-Google: http://www.google.it/search?q=
-Debian BTS: http://bugs.debian.org/
-Wikipedia: http://en.wikipedia.org/wiki/
+Google: https://www.google.it/search?q=
+Debian BTS: https://bugs.debian.org/
+Wikipedia: https://en.wikipedia.org/wiki/
 
 BUGS
 ----

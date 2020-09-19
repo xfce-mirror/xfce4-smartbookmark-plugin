@@ -9,7 +9,7 @@ AC_COPYRIGHT([Copyright (c) 2006 by Emanuele Rocca <ema@debian.org>])
 AC_INIT([xfce4-smartbookmark-plugin], [smartbookmark_version], [ema@debian.org])
 
 dnl Initialize automake
-AM_INIT_AUTOMAKE([1.8 dist-bzip2 tar-ustar no-dist-gzip])
+AM_INIT_AUTOMAKE([1.8 dist-bzip2 tar-ustar no-dist-gzip foreign])
 AM_CONFIG_HEADER([config.h])
 AM_MAINTAINER_MODE()
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])

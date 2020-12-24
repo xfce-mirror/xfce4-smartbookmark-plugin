@@ -1,3 +1,18 @@
+0.5.2
+======
+- Fix ISO C90 forbids mixed declarations and code
+- Update configure.ac.in syntax
+- Create README.md. Update configure.ac.in
+- Add basic GitLab pipeline
+- Update URLs from goodies.x.o to docs.x.o (Bug #16176)
+- Fix build with panel 4.15
+- Make build less verbose
+- s/http/https
+- Translation Updates:
+  Albanian, Belarusian, Bulgarian, Eastern Armenian, English (Canada),
+  Estonian, Galician, Hebrew, Hindi, Icelandic, Slovak, Slovenian,
+  Spanish, Turkish, Uyghur
+
 0.5.1 : 2019/09/13
 =====
 - Preferences: Improve spacing and layout (bug #14675)

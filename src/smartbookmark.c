@@ -75,13 +75,13 @@ XFCE_PANEL_PLUGIN_REGISTER(smartbookmark_construct);
 
 static gboolean do_search(const char *url, const char *keyword)
 {
-    DBG ("Do search");
     gchar *argv[] = { "exo-open", "--launch", "WebBrowser", NULL, NULL };
     GError *error = NULL;
     gchar *complete_url;
     gboolean success;
     complete_url = g_strconcat(url, keyword, NULL);
     argv[3] = complete_url;
+    DBG ("Do search");
 
     success = g_spawn_async(NULL, (gchar **)argv, NULL,
         G_SPAWN_SEARCH_PATH, NULL, NULL, NULL, &error);
@@ -244,8 +244,9 @@ static void search_set_size(XfcePanelPlugin *plugin,gint size, t_search *search)
 static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
 {
     GtkWidget *grid, *vbox;
-    xfce_panel_plugin_block_menu(plugin);
     GtkWidget *urllabel, *textlabel, *sizelabel;
+    GtkAdjustment *spinner_adj;
+    xfce_panel_plugin_block_menu(plugin);
     DBG ("search_create_options");
     search->opt_dialog  = xfce_titled_dialog_new_with_buttons(_("Smartbookmark"),
                                              GTK_WINDOW (gtk_widget_get_toplevel (GTK_WIDGET (plugin))),
@@ -312,7 +313,7 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
     gtk_label_set_xalign (GTK_LABEL (sizelabel), 0.0f);
     gtk_grid_attach(GTK_GRID(grid), sizelabel, 0, 2, 1, 1);
     /* size spinner */
-    GtkAdjustment* spinner_adj = gtk_adjustment_new (search->size, 2.0, 30.0, 1.0, 5.0, 0);
+    spinner_adj = gtk_adjustment_new (search->size, 2.0, 30.0, 1.0, 5.0, 0);
     search->size_spinner = gtk_spin_button_new(GTK_ADJUSTMENT(spinner_adj), 1.0, 0);
     gtk_widget_set_halign (GTK_WIDGET (search->size_spinner), GTK_ALIGN_START);
     gtk_grid_attach(GTK_GRID(grid), GTK_WIDGET(search->size_spinner), 1, 2, 1, 1);
@@ -331,8 +332,8 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
 static void
 smartbookmark_construct(XfcePanelPlugin *plugin)
 {
-    DBG ("Creating SmartBookMark");
     t_search *search = search_new(plugin);
+    DBG ("Creating SmartBookMark");
     xfce_textdomain(GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
 
     g_signal_connect (plugin, "size-changed",

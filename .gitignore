@@ -24,7 +24,6 @@ autom4te.cache
 *.desktop
 INSTALL
 \[config.h\].in
-configure.ac
 libtool
 m4/
 po/Makefile.in.in

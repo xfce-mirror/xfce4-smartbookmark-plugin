@@ -1,19 +1,13 @@
 dnl Version information
-m4_define([smartbookmark_version_major], [0])
-m4_define([smartbookmark_version_minor], [5])
-m4_define([smartbookmark_version_micro], [2])
-m4_define([smartbookmark_version_tag], [git])
-m4_define([smartbookmark_version],
-    [smartbookmark_version_major.smartbookmark_version_minor.smartbookmark_version_micro])
-
-m4_define([smartbookmark_debug_default], [ifelse(smartbookmark_version_tag(), [git], [yes], [minimum])])
+XDT_VERSION_INIT([0.5.2], [git])
 
 AC_COPYRIGHT([Copyright (c) 2006-2020
               The Xfce development team. All rights reserved. 
 
 Written by by Emanuele Rocca <ema@debian.org>])
-AC_INIT([xfce4-smartbookmark-plugin], [smartbookmark_version], [https://gitlab.xfce.org/panel-plugins/xfce4-smartbookmark-plugin])
+AC_INIT([xfce4-smartbookmark-plugin], [xdt_version], [https://gitlab.xfce.org/panel-plugins/xfce4-smartbookmark-plugin])
 AC_PREREQ([2.69])
+AC_REVISION([xdt_version_build])
 
 dnl Initialize automake
 AM_INIT_AUTOMAKE([1.8 dist-bzip2 tar-ustar no-dist-gzip foreign])
@@ -43,7 +37,7 @@ XDT_CHECK_PACKAGE([GTK], [gtk+-3.0], [3.22.0])
 XDT_CHECK_PACKAGE([LIBXFCE4UI], [libxfce4ui-2], [4.12.0])
 XDT_CHECK_PACKAGE([LIBXFCE4PANEL], [libxfce4panel-2.0], [4.12.0])
 
-XDT_FEATURE_DEBUG([smartbookmark_debug_default])
+XDT_FEATURE_DEBUG([xdt_debug_default])
 
 AC_CONFIG_FILES([Makefile
            po/Makefile.in

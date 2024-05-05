@@ -1,7 +1,7 @@
 [Xfce Panel]
 Type=X-XFCE-PanelPlugin
-_Name=SmartBookmark
-_Comment=Query websites from the Xfce panel
+Name=SmartBookmark
+Comment=Query websites from the Xfce panel
 Icon=system-search
 X-XFCE-Module=smartbookmark
 X-XFCE-Internal=FALSE

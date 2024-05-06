@@ -8,10 +8,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-03 21:17+0200\n"
-"PO-Revision-Date: 2020-06-26 01:40+0000\n"
-"Last-Translator: Steve Harris <steve@jbs.ca>\n"
-"Language-Team: English (Canada) (http://www.transifex.com/xfce/xfce-panel-plugins/language/en_CA/)\n"
+"POT-Creation-Date: 2024-05-06 00:56+0200\n"
+"PO-Revision-Date: 2013-07-03 19:17+0000\n"
+"Last-Translator: Steve Harris <steve@jbs.ca>, 2020\n"
+"Language-Team: English (Canada) (http://app.transifex.com/xfce/xfce-panel-plugins/language/en_CA/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,38 +23,29 @@ msgstr ""
 msgid "Failed to send %s to your preferred browser"
 msgstr "Failed to send %s to your preferred browser"
 
-#: ../src/smartbookmark.c:259
+#: ../src/smartbookmark.c:251
 msgid "Smartbookmark"
 msgstr "Smartbookmark"
 
-#: ../src/smartbookmark.c:264
+#: ../src/smartbookmark.c:257
 msgid "Preferences"
 msgstr "Preferences"
 
 #. text label
-#: ../src/smartbookmark.c:279
+#: ../src/smartbookmark.c:269
 msgid "Label:"
 msgstr "Label:"
 
-#. size label
-#: ../src/smartbookmark.c:294
-msgid "Size:"
-msgstr "Size:"
-
-#. Hide label option
-#: ../src/smartbookmark.c:305
+#: ../src/smartbookmark.c:288
 msgid "Hide label"
 msgstr "Hide label"
 
 #. url label
-#: ../src/smartbookmark.c:316
+#: ../src/smartbookmark.c:297
 msgid "URL:  "
 msgstr "URL:  "
 
-#: ../src/smartbookmark.desktop.in.h:1
-msgid "SmartBookmark"
-msgstr "SmartBookmark"
-
-#: ../src/smartbookmark.desktop.in.h:2
-msgid "Query websites from the Xfce panel"
-msgstr "Query websites from the Xfce panel"
+#. size label
+#: ../src/smartbookmark.c:312
+msgid "Size:"
+msgstr "Size:"

@@ -13,53 +13,44 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-03 21:17+0200\n"
-"PO-Revision-Date: 2019-01-14 15:31+0000\n"
-"Last-Translator: Ldm Public <ldmpub@gmail.com>\n"
-"Language-Team: French (http://www.transifex.com/xfce/xfce-panel-plugins/language/fr/)\n"
+"POT-Creation-Date: 2024-05-06 00:56+0200\n"
+"PO-Revision-Date: 2013-07-03 19:17+0000\n"
+"Last-Translator: Charles Monzat <c.monzat@laposte.net>, 2018\n"
+"Language-Team: French (http://app.transifex.com/xfce/xfce-panel-plugins/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: ../src/smartbookmark.c:90
 #, c-format
 msgid "Failed to send %s to your preferred browser"
 msgstr "Impossible d’envoyer %s à votre navigateur préféré"
 
-#: ../src/smartbookmark.c:259
+#: ../src/smartbookmark.c:251
 msgid "Smartbookmark"
 msgstr "Smartbookmark"
 
-#: ../src/smartbookmark.c:264
+#: ../src/smartbookmark.c:257
 msgid "Preferences"
 msgstr "Préférences"
 
 #. text label
-#: ../src/smartbookmark.c:279
+#: ../src/smartbookmark.c:269
 msgid "Label:"
 msgstr "Étiquette :"
 
-#. size label
-#: ../src/smartbookmark.c:294
-msgid "Size:"
-msgstr "Taille :"
-
-#. Hide label option
-#: ../src/smartbookmark.c:305
+#: ../src/smartbookmark.c:288
 msgid "Hide label"
 msgstr "Masquer l’étiquette"
 
 #. url label
-#: ../src/smartbookmark.c:316
+#: ../src/smartbookmark.c:297
 msgid "URL:  "
 msgstr "URL :  "
 
-#: ../src/smartbookmark.desktop.in.h:1
-msgid "SmartBookmark"
-msgstr "SmartBookmark"
-
-#: ../src/smartbookmark.desktop.in.h:2
-msgid "Query websites from the Xfce panel"
-msgstr "Interroger des sites Web depuis le tableau de bord Xfce"
+#. size label
+#: ../src/smartbookmark.c:312
+msgid "Size:"
+msgstr "Taille :"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-28 15:08+0100\n"
+"POT-Creation-Date: 2024-05-06 00:56+0200\n"
 "PO-Revision-Date: 2013-07-03 19:17+0000\n"
 "Last-Translator: Andi Chandler <andi@gowling.com>, 2023\n"
 "Language-Team: English (United Kingdom) (http://app.transifex.com/xfce/xfce-panel-plugins/language/en_GB/)\n"
@@ -50,11 +50,3 @@ msgstr "URL:  "
 #: ../src/smartbookmark.c:312
 msgid "Size:"
 msgstr "Size:"
-
-#: ../src/smartbookmark.desktop.in.h:1
-msgid "SmartBookmark"
-msgstr "SmartBookmark"
-
-#: ../src/smartbookmark.desktop.in.h:2
-msgid "Query websites from the Xfce panel"
-msgstr "Query websites from the Xfce panel"

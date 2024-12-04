@@ -56,4 +56,4 @@ msgstr "Inteligentna zakładka"
 
 #: src/smartbookmark.desktop.in:5
 msgid "Query websites from the Xfce panel"
-msgstr "Odpytywanie stron internetowych z panelu Xfce"
+msgstr "Odpytywanie stron internetowych z panelu Xfce"

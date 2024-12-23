@@ -248,10 +248,10 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
     GtkAdjustment *spinner_adj;
     xfce_panel_plugin_block_menu(plugin);
     DBG ("search_create_options");
-    search->opt_dialog  = xfce_titled_dialog_new_with_buttons(_("Smartbookmark"),
+    search->opt_dialog  = xfce_titled_dialog_new_with_mixed_buttons(_("Smartbookmark"),
                                              GTK_WINDOW (gtk_widget_get_toplevel (GTK_WIDGET (plugin))),
                                              GTK_DIALOG_DESTROY_WITH_PARENT,
-                                             "gtk-close", GTK_RESPONSE_OK,
+                                             "window-close-symbolic", _("_Close"), GTK_RESPONSE_OK,
                                              NULL);
 
     xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (search->opt_dialog), _("Preferences"));

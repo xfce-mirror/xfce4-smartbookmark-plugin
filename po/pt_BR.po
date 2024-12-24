@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-05-06 12:59+0200\n"
+"POT-Creation-Date: 2024-12-24 00:53+0100\n"
 "PO-Revision-Date: 2013-07-03 19:17+0000\n"
 "Last-Translator: Og Maciel <ogmaciel@gnome.org>, 2008\n"
 "Language-Team: Portuguese (Brazil) (http://app.transifex.com/xfce/xfce-panel-plugins/language/pt_BR/)\n"
@@ -26,6 +26,10 @@ msgstr "Falha ao enviar %s para as preferências do seu navegador"
 #: src/smartbookmark.c:251
 msgid "Smartbookmark"
 msgstr "Marcador Inteligente"
+
+#: src/smartbookmark.c:254
+msgid "_Close"
+msgstr "_Fechar"
 
 #: src/smartbookmark.c:257
 msgid "Preferences"

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-05-06 12:59+0200\n"
+"POT-Creation-Date: 2024-12-24 00:53+0100\n"
 "PO-Revision-Date: 2013-07-03 19:17+0000\n"
 "Last-Translator: Robert Antoni Buj i Gelonch <rbuj@fedoraproject.org>, 2017-2019\n"
 "Language-Team: Catalan (http://app.transifex.com/xfce/xfce-panel-plugins/language/ca/)\n"
@@ -30,6 +30,10 @@ msgstr "Ha fallat l'enviament de %s al vostre navegador preferit"
 #: src/smartbookmark.c:251
 msgid "Smartbookmark"
 msgstr "Smartbookmark"
+
+#: src/smartbookmark.c:254
+msgid "_Close"
+msgstr "_Tanca"
 
 #: src/smartbookmark.c:257
 msgid "Preferences"

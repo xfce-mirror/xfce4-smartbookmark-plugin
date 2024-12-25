@@ -1,3 +1,28 @@
+0.5.3 (2024-12-25)
+=====
+- Update copyright year
+- build: Bump dependency versions and fix deprecation warnings
+- I18n: Update po/LINGUAS list
+- I18n: Update po/LINGUAS list
+- build: Use XDT_VERSION_INIT and get rid of configure.ac.in
+- build: Switch from intltool to gettext
+- build: Fix intltool lock file problem during make distcheck
+- build: Add GLib requirement
+- build: Fix autotools warnings
+- autoconf: AM_CONFIG_HEADER -> AC_CONFIG_HEADERS
+- Update `.gitignore`
+- Translation Updates:
+  Albanian, Arabic, Asturian, Basque, Belarusian, Bulgarian, Catalan,
+  Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish, Dutch,
+  Eastern Armenian, English (Australia), English (Canada), English
+  (United Kingdom), Estonian, Finnish, French, Galician, German, Greek,
+  Hebrew, Hindi, Hungarian, Icelandic, Indonesian, Interlingue,
+  Italian, Japanese, Korean, Kurdish, Latvian, Lithuanian, Malay,
+  Norwegian Bokmål, Occitan (post 1500), Polish, Portuguese,
+  Portuguese (Brazil), Romanian, Russian, Serbian, Slovak, Slovenian,
+  Spanish, Swedish, Thai, Turkish, Ukrainian, Urdu, Urdu (Pakistan),
+  Uyghur
+
 0.5.2
 ======
 - Fix ISO C90 forbids mixed declarations and code

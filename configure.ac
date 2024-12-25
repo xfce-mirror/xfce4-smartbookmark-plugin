@@ -1,5 +1,5 @@
 dnl Version information
-XDT_VERSION_INIT([0.5.2], [git])
+XDT_VERSION_INIT([0.5.3])
 
 AC_COPYRIGHT([Copyright (c) 2006-2024
               The Xfce development team. All rights reserved. 

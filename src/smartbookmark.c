@@ -75,7 +75,11 @@ XFCE_PANEL_PLUGIN_REGISTER(smartbookmark_construct);
 
 static gboolean do_search(const char *url, const char *keyword)
 {
+#if LIBXFCE4UI_CHECK_VERSION(4, 21, 0)
+    gchar *argv[] = { "xfce-open", "--launch", "WebBrowser", NULL, NULL };
+#else
     gchar *argv[] = { "exo-open", "--launch", "WebBrowser", NULL, NULL };
+#endif
     GError *error = NULL;
     gchar *complete_url;
     gboolean success;

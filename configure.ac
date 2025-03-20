@@ -1,7 +1,8 @@
 dnl Version information
+m4_define([copyright_year], [2025])
 XDT_VERSION_INIT([0.5.3], [git])
 
-AC_COPYRIGHT([Copyright (c) 2006-2024
+AC_COPYRIGHT([Copyright (c) 2006-copyright_year()
               The Xfce development team. All rights reserved. 
 
 Written by by Emanuele Rocca <ema@debian.org>])
@@ -9,6 +10,9 @@ AC_INIT([xfce4-smartbookmark-plugin], [xdt_version], [https://gitlab.xfce.org/pa
 AC_PREREQ([2.69])
 AC_REVISION([xdt_version_build])
 AC_DEFINE([VERSION_FULL], [PACKAGE_VERSION], [Alias for VERSION and PACKAGE_VERSION for meson compatibility])
+COPYRIGHT_YEAR=copyright_year()
+AC_DEFINE_UNQUOTED([COPYRIGHT_YEAR], ["$COPYRIGHT_YEAR"], [Copyright year])
+AC_SUBST([COPYRIGHT_YEAR])
 
 dnl Initialize automake
 AM_INIT_AUTOMAKE([1.8 dist-bzip2 tar-ustar no-dist-gzip foreign])

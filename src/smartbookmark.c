@@ -263,7 +263,7 @@ static void show_about(XfcePanelPlugin *plugin, t_search *search)
         "program-name", PACKAGE_NAME,
         "comments", _("Query websites from the Xfce panel"),
         "website", PACKAGE_URL,
-        "copyright", "Copyright \302\251 2006-2025 The Xfce development team",
+        "copyright", "Copyright \302\251 2006-" COPYRIGHT_YEAR " The Xfce development team",
         "authors", auth, NULL);
 }
 

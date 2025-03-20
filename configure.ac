@@ -1,13 +1,18 @@
 dnl Version information
+m4_define([copyright_year], [2025])
 XDT_VERSION_INIT([0.5.3], [git])
 
-AC_COPYRIGHT([Copyright (c) 2006-2024
+AC_COPYRIGHT([Copyright (c) 2006-copyright_year()
               The Xfce development team. All rights reserved. 
 
 Written by by Emanuele Rocca <ema@debian.org>])
 AC_INIT([xfce4-smartbookmark-plugin], [xdt_version], [https://gitlab.xfce.org/panel-plugins/xfce4-smartbookmark-plugin])
 AC_PREREQ([2.69])
 AC_REVISION([xdt_version_build])
+AC_DEFINE([VERSION_FULL], [PACKAGE_VERSION], [Alias for VERSION and PACKAGE_VERSION for meson compatibility])
+COPYRIGHT_YEAR=copyright_year()
+AC_DEFINE_UNQUOTED([COPYRIGHT_YEAR], ["$COPYRIGHT_YEAR"], [Copyright year])
+AC_SUBST([COPYRIGHT_YEAR])
 
 dnl Initialize automake
 AM_INIT_AUTOMAKE([1.8 dist-bzip2 tar-ustar no-dist-gzip foreign])
@@ -35,6 +40,7 @@ dnl Check for required packages
 XDT_CHECK_PACKAGE([GLIB], [glib-2.0], [2.50.0])
 XDT_CHECK_PACKAGE([GTK], [gtk+-3.0], [3.22.0])
 XDT_CHECK_PACKAGE([LIBXFCE4UI], [libxfce4ui-2], [4.16.0])
+XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.16.0])
 XDT_CHECK_PACKAGE([LIBXFCE4PANEL], [libxfce4panel-2.0], [4.16.0])
 
 XDT_FEATURE_DEBUG([xdt_debug_default])

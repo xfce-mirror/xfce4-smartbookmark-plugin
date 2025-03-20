@@ -34,6 +34,9 @@
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
+#ifdef HAVE_XFCE_REVISION_H
+#include "xfce-revision.h"
+#endif
 
 #include <gtk/gtk.h>
 #include <gdk/gdkkeysyms.h>
@@ -244,6 +247,26 @@ static void search_set_size(XfcePanelPlugin *plugin,gint size, t_search *search)
     do the resize of entry :) */
 };
 
+static void show_about(XfcePanelPlugin *plugin, t_search *search)
+{
+    const gchar *auth[] = {
+        "Emanuele Rocca <ema@debian.org>",
+        "Masse Nicolas <masse.nicolas@gmail.com>",
+        "Florian Rivoal <frivoal@xfce.org>",
+        NULL
+    };
+
+    gtk_show_about_dialog(NULL,
+        "logo-icon-name", "system-search",
+        "license", xfce_get_license_text (XFCE_LICENSE_TEXT_GPL),
+        "version", VERSION_FULL,
+        "program-name", PACKAGE_NAME,
+        "comments", _("Query websites from the Xfce panel"),
+        "website", PACKAGE_URL,
+        "copyright", "Copyright \302\251 2006-" COPYRIGHT_YEAR " The Xfce development team",
+        "authors", auth, NULL);
+}
+
 /* options dialog */
 static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
 {
@@ -345,6 +368,10 @@ smartbookmark_construct(XfcePanelPlugin *plugin)
 
     g_signal_connect (plugin, "save",
                       G_CALLBACK (search_write_config), search);
+
+    xfce_panel_plugin_menu_show_about (plugin);
+    g_signal_connect (plugin, "about",
+                      G_CALLBACK (show_about), search);
 
     xfce_panel_plugin_menu_show_configure (plugin);
     g_signal_connect (plugin, "configure-plugin",

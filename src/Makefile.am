@@ -11,8 +11,11 @@ libsmartbookmark_la_LDFLAGS =							\
 	$(PLATFORM_LDFLAGS)
 
 libsmartbookmark_la_LIBADD = \
+	@GLIB_LIBS@ \
+	@GTK_LIBS@ \
 	@LIBXFCE4PANEL_LIBS@ \
-	@LIBXFCE4UI_LIBS@
+	@LIBXFCE4UI_LIBS@ \
+	@LIBXFCE4UTIL_LIBS@
 
 libsmartbookmark_la_SOURCES =							\
 	smartbookmark.c
@@ -20,7 +23,10 @@ libsmartbookmark_la_SOURCES =							\
 
 libsmartbookmark_la_CFLAGS =	 \
 	-I$(top_srcdir) \
+	@GLIB_CFLAGS@ \
+	@GTK_CFLAGS@ \
 	@LIBXFCE4UI_CFLAGS@ \
+	@LIBXFCE4UTIL_CFLAGS@ \
 	@LIBXFCE4PANEL_CFLAGS@ \
 	-DPACKAGE_LOCALE_DIR=\"$(localedir)\"
 
@@ -32,6 +38,9 @@ desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 %.desktop: %.desktop.in
 	$(AM_V_GEN) $(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
 
-EXTRA_DIST = $(desktop_in_files)
+EXTRA_DIST = \
+	$(desktop_in_files) \
+	meson.build \
+	$(NULL)
 
 DISTCLEANFILES = $(desktop_DATA)

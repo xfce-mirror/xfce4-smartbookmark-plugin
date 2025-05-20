@@ -1,6 +1,6 @@
 dnl Version information
 m4_define([copyright_year], [2025])
-XDT_VERSION_INIT([0.5.3], [git])
+XDT_VERSION_INIT([0.6.0])
 
 AC_COPYRIGHT([Copyright (c) 2006-copyright_year()
               The Xfce development team. All rights reserved. 

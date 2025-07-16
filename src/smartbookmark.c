@@ -47,6 +47,8 @@
  * Types
  */
 typedef struct {
+    XfcePanelPlugin *plugin;
+
     GtkWidget *box;
     GtkWidget *entry;           /* keyword entry */
     GtkWidget *label;
@@ -172,6 +174,8 @@ static t_search *search_new(XfcePanelPlugin *plugin)
     gchar* filename;
 
     search = g_new0(t_search, 1);
+    search->plugin = plugin;
+
     search->box = gtk_box_new(!xfce_panel_plugin_get_orientation(plugin), 0);
     gtk_widget_set_halign(GTK_WIDGET(search->box), GTK_ALIGN_CENTER);
     gtk_widget_set_valign(GTK_WIDGET(search->box), GTK_ALIGN_CENTER);
@@ -264,19 +268,32 @@ static void show_about(XfcePanelPlugin *plugin, t_search *search)
         "authors", auth, NULL);
 }
 
+static void
+search_write_config_cb (GtkWidget *dialog, t_search *search)
+{
+    search_write_config (search->plugin, search);
+}
+
 /* options dialog */
 static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
 {
     GtkWidget *grid, *vbox;
     GtkWidget *urllabel, *textlabel, *sizelabel;
     GtkAdjustment *spinner_adj;
-    xfce_panel_plugin_block_menu(plugin);
+
     DBG ("search_create_options");
+
+    if (search->opt_dialog != NULL) {
+        gtk_window_present (GTK_WINDOW (search->opt_dialog));
+        return;
+    }
+
     search->opt_dialog  = xfce_titled_dialog_new_with_mixed_buttons(_("Smartbookmark"),
                                              GTK_WINDOW (gtk_widget_get_toplevel (GTK_WIDGET (plugin))),
                                              GTK_DIALOG_DESTROY_WITH_PARENT,
                                              "window-close-symbolic", _("_Close"), GTK_RESPONSE_OK,
                                              NULL);
+    g_object_add_weak_pointer (G_OBJECT (search->opt_dialog), (gpointer *) &search->opt_dialog);
 
     xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (search->opt_dialog), _("Preferences"));
     gtk_window_set_icon_name  (GTK_WINDOW (search->opt_dialog), "system-search");
@@ -343,11 +360,9 @@ static void search_create_options(XfcePanelPlugin *plugin, t_search *search)
     gtk_grid_attach(GTK_GRID(grid), GTK_WIDGET(search->size_spinner), 1, 2, 1, 1);
     g_signal_connect (GTK_WIDGET(search->size_spinner), "value-changed", G_CALLBACK (entry_size_changed_cb), search);
 
+    g_signal_connect (search->opt_dialog, "response", G_CALLBACK (gtk_widget_destroy), NULL);
+    g_signal_connect (search->opt_dialog, "destroy", G_CALLBACK (search_write_config_cb), search);
     gtk_widget_show_all(search->opt_dialog);
-    gtk_dialog_run (GTK_DIALOG(search->opt_dialog));
-    gtk_widget_destroy(search->opt_dialog);
-    xfce_panel_plugin_unblock_menu(plugin);
-    search_write_config(plugin, search);
 }
 
 

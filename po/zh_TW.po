@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Xfce
-# This file is distributed under the same license as the xfce-panel-plugins.xfce4-smartbookmark-plugin package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
 # Cosmo Chene <cosmolax@ubuntu.org.tw>, 2006
@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
-"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-12-24 00:53+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-17 00:54+0200\n"
 "PO-Revision-Date: 2013-07-03 19:17+0000\n"
 "Last-Translator: Hydonsingore Cia <hydonsingore@educities.edu.tw>, 2006\n"
 "Language-Team: Chinese (Taiwan) (http://app.transifex.com/xfce/xfce-panel-plugins/language/zh_TW/)\n"
@@ -19,46 +19,42 @@ msgstr ""
 "Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/smartbookmark.c:90
+#: ../src/smartbookmark.c:96
 #, c-format
 msgid "Failed to send %s to your preferred browser"
 msgstr "無法將 %s 傳送至您偏好的瀏覽器中"
 
-#: src/smartbookmark.c:251
+#: ../src/smartbookmark.c:265
+msgid "Query websites from the Xfce panel"
+msgstr "從 Xfce 面板查詢網站"
+
+#: ../src/smartbookmark.c:291
 msgid "Smartbookmark"
 msgstr "智慧書籤"
 
-#: src/smartbookmark.c:254
+#: ../src/smartbookmark.c:294
 msgid "_Close"
 msgstr "關閉(_C)"
 
-#: src/smartbookmark.c:257
+#: ../src/smartbookmark.c:298
 msgid "Preferences"
 msgstr "偏好設定"
 
 #. text label
-#: src/smartbookmark.c:269
+#: ../src/smartbookmark.c:310
 msgid "Label:"
 msgstr "標籤："
 
-#: src/smartbookmark.c:288
+#: ../src/smartbookmark.c:329
 msgid "Hide label"
 msgstr "隱藏標籤"
 
 #. url label
-#: src/smartbookmark.c:297
+#: ../src/smartbookmark.c:338
 msgid "URL:  "
 msgstr "網址："
 
 #. size label
-#: src/smartbookmark.c:312
+#: ../src/smartbookmark.c:353
 msgid "Size:"
 msgstr "大小："
-
-#: src/smartbookmark.desktop.in:4
-msgid "SmartBookmark"
-msgstr "SmartBookmark"
-
-#: src/smartbookmark.desktop.in:5
-msgid "Query websites from the Xfce panel"
-msgstr "從 Xfce 面板查詢網站"

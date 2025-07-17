@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Xfce
-# This file is distributed under the same license as the xfce-panel-plugins.xfce4-smartbookmark-plugin package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
 # كريم أولاد الشلحة <herr.linux88@gmail.com>, 2012
@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
-"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-12-24 00:53+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-17 00:54+0200\n"
 "PO-Revision-Date: 2013-07-03 19:17+0000\n"
 "Last-Translator: محمد الحرقان <malham1@gmail.com>, 2012-2013\n"
 "Language-Team: Arabic (http://app.transifex.com/xfce/xfce-panel-plugins/language/ar/)\n"
@@ -20,46 +20,42 @@ msgstr ""
 "Language: ar\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-#: src/smartbookmark.c:90
+#: ../src/smartbookmark.c:96
 #, c-format
 msgid "Failed to send %s to your preferred browser"
 msgstr "فشل في إرسال %s إلى متصفحك المفضل"
 
-#: src/smartbookmark.c:251
+#: ../src/smartbookmark.c:265
+msgid "Query websites from the Xfce panel"
+msgstr "موقع للإستعلام عن شريط إكسفس"
+
+#: ../src/smartbookmark.c:291
 msgid "Smartbookmark"
 msgstr "علامات ذكية"
 
-#: src/smartbookmark.c:254
+#: ../src/smartbookmark.c:294
 msgid "_Close"
 msgstr "_إغلاق"
 
-#: src/smartbookmark.c:257
+#: ../src/smartbookmark.c:298
 msgid "Preferences"
 msgstr "تفضيلات"
 
 #. text label
-#: src/smartbookmark.c:269
+#: ../src/smartbookmark.c:310
 msgid "Label:"
 msgstr "التسمية:"
 
-#: src/smartbookmark.c:288
+#: ../src/smartbookmark.c:329
 msgid "Hide label"
 msgstr "إخفاء الوسم"
 
 #. url label
-#: src/smartbookmark.c:297
+#: ../src/smartbookmark.c:338
 msgid "URL:  "
 msgstr "مسار:  "
 
 #. size label
-#: src/smartbookmark.c:312
+#: ../src/smartbookmark.c:353
 msgid "Size:"
 msgstr "حجم:"
-
-#: src/smartbookmark.desktop.in:4
-msgid "SmartBookmark"
-msgstr "علامات ذكية"
-
-#: src/smartbookmark.desktop.in:5
-msgid "Query websites from the Xfce panel"
-msgstr "موقع للإستعلام عن شريط إكسفس"

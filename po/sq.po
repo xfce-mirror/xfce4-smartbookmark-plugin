@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR Xfce
+# This file is distributed under the same license as the xfce-panel-plugins.xfce4-smartbookmark-plugin package.
 # 
 # Translators:
 # Besnik Bleta <besnik@programeshqip.org>, 2007,2020
@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-17 00:54+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
+"POT-Creation-Date: 2025-07-18 11:08+0200\n"
 "PO-Revision-Date: 2013-07-03 19:17+0000\n"
 "Last-Translator: Besnik Bleta <besnik@programeshqip.org>, 2007,2020\n"
 "Language-Team: Albanian (http://app.transifex.com/xfce/xfce-panel-plugins/language/sq/)\n"
@@ -19,42 +19,46 @@ msgstr ""
 "Language: sq\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../src/smartbookmark.c:96
+#: src/smartbookmark.c:96
 #, c-format
 msgid "Failed to send %s to your preferred browser"
 msgstr "S’u arrit të dërgohej %s te shfletuesi juaj i parapëlqyer"
 
-#: ../src/smartbookmark.c:265
+#: src/smartbookmark.c:265 src/smartbookmark.desktop.in:5
 msgid "Query websites from the Xfce panel"
 msgstr "Kërkoni nëpër sajte që prej panelit Xfce"
 
-#: ../src/smartbookmark.c:291
+#: src/smartbookmark.c:291
 msgid "Smartbookmark"
 msgstr "Faqerojtës të mençur"
 
-#: ../src/smartbookmark.c:294
+#: src/smartbookmark.c:294
 msgid "_Close"
 msgstr "_Mbylle"
 
-#: ../src/smartbookmark.c:298
+#: src/smartbookmark.c:298
 msgid "Preferences"
 msgstr "Parapëlqime"
 
 #. text label
-#: ../src/smartbookmark.c:310
+#: src/smartbookmark.c:310
 msgid "Label:"
 msgstr "Etiketë:"
 
-#: ../src/smartbookmark.c:329
+#: src/smartbookmark.c:329
 msgid "Hide label"
 msgstr "Fshih etiketë"
 
 #. url label
-#: ../src/smartbookmark.c:338
+#: src/smartbookmark.c:338
 msgid "URL:  "
 msgstr "URL:  "
 
 #. size label
-#: ../src/smartbookmark.c:353
+#: src/smartbookmark.c:353
 msgid "Size:"
 msgstr "Madhësi:"
+
+#: src/smartbookmark.desktop.in:4
+msgid "SmartBookmark"
+msgstr "Faqerojtës të mençur"

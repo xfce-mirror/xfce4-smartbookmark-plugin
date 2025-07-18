@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR Xfce
+# This file is distributed under the same license as the xfce-panel-plugins.xfce4-smartbookmark-plugin package.
 # 
 # Translators:
 # Michael Findlay <translate@cobber-linux.org>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-17 00:54+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
+"POT-Creation-Date: 2025-07-18 11:08+0200\n"
 "PO-Revision-Date: 2013-07-03 19:17+0000\n"
 "Last-Translator: Michael Findlay <translate@cobber-linux.org>, 2013\n"
 "Language-Team: English (Australia) (http://app.transifex.com/xfce/xfce-panel-plugins/language/en_AU/)\n"
@@ -18,42 +18,46 @@ msgstr ""
 "Language: en_AU\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../src/smartbookmark.c:96
+#: src/smartbookmark.c:96
 #, c-format
 msgid "Failed to send %s to your preferred browser"
 msgstr "Failed to send %s to your preferred browser"
 
-#: ../src/smartbookmark.c:265
+#: src/smartbookmark.c:265 src/smartbookmark.desktop.in:5
 msgid "Query websites from the Xfce panel"
 msgstr "Query websites from the Xfce panel"
 
-#: ../src/smartbookmark.c:291
+#: src/smartbookmark.c:291
 msgid "Smartbookmark"
 msgstr "Smartbookmark"
 
-#: ../src/smartbookmark.c:294
+#: src/smartbookmark.c:294
 msgid "_Close"
 msgstr "_Close"
 
-#: ../src/smartbookmark.c:298
+#: src/smartbookmark.c:298
 msgid "Preferences"
 msgstr "Preferences"
 
 #. text label
-#: ../src/smartbookmark.c:310
+#: src/smartbookmark.c:310
 msgid "Label:"
 msgstr "Label:"
 
-#: ../src/smartbookmark.c:329
+#: src/smartbookmark.c:329
 msgid "Hide label"
 msgstr "Hide label"
 
 #. url label
-#: ../src/smartbookmark.c:338
+#: src/smartbookmark.c:338
 msgid "URL:  "
 msgstr "URL:  "
 
 #. size label
-#: ../src/smartbookmark.c:353
+#: src/smartbookmark.c:353
 msgid "Size:"
 msgstr "Size:"
+
+#: src/smartbookmark.desktop.in:4
+msgid "SmartBookmark"
+msgstr "SmartBookmark"

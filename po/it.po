@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR Xfce
+# This file is distributed under the same license as the xfce-panel-plugins.xfce4-smartbookmark-plugin package.
 # 
 # Translators:
 # Cristian Marchi <cri.penta@gmail.com>, 2009
@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-17 00:54+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
+"POT-Creation-Date: 2025-07-18 11:08+0200\n"
 "PO-Revision-Date: 2013-07-03 19:17+0000\n"
 "Last-Translator: Cristian Marchi <cri.penta@gmail.com>, 2009\n"
 "Language-Team: Italian (http://app.transifex.com/xfce/xfce-panel-plugins/language/it/)\n"
@@ -20,42 +20,46 @@ msgstr ""
 "Language: it\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ../src/smartbookmark.c:96
+#: src/smartbookmark.c:96
 #, c-format
 msgid "Failed to send %s to your preferred browser"
 msgstr "Impossibile inviare \"%s\" al browser preferito"
 
-#: ../src/smartbookmark.c:265
+#: src/smartbookmark.c:265 src/smartbookmark.desktop.in:5
 msgid "Query websites from the Xfce panel"
 msgstr "Interroga i siti web dal pannello di Xfce"
 
-#: ../src/smartbookmark.c:291
+#: src/smartbookmark.c:291
 msgid "Smartbookmark"
 msgstr "SmartBookmark"
 
-#: ../src/smartbookmark.c:294
+#: src/smartbookmark.c:294
 msgid "_Close"
 msgstr "_Chiudi"
 
-#: ../src/smartbookmark.c:298
+#: src/smartbookmark.c:298
 msgid "Preferences"
 msgstr "Preferenze"
 
 #. text label
-#: ../src/smartbookmark.c:310
+#: src/smartbookmark.c:310
 msgid "Label:"
 msgstr "Etichetta:"
 
-#: ../src/smartbookmark.c:329
+#: src/smartbookmark.c:329
 msgid "Hide label"
 msgstr "Nascondi etichetta"
 
 #. url label
-#: ../src/smartbookmark.c:338
+#: src/smartbookmark.c:338
 msgid "URL:  "
 msgstr "URL:  "
 
 #. size label
-#: ../src/smartbookmark.c:353
+#: src/smartbookmark.c:353
 msgid "Size:"
 msgstr "Dimensione:"
+
+#: src/smartbookmark.desktop.in:4
+msgid "SmartBookmark"
+msgstr "SmartBookmark"

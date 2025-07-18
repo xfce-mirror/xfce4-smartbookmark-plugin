@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR Xfce
+# This file is distributed under the same license as the xfce-panel-plugins.xfce4-smartbookmark-plugin package.
 # 
 # Translators:
 # Andres <kovtunos@yandex.ru>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-17 00:54+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
+"POT-Creation-Date: 2025-07-18 11:08+0200\n"
 "PO-Revision-Date: 2013-07-03 19:17+0000\n"
 "Last-Translator: Andres <kovtunos@yandex.ru>, 2013\n"
 "Language-Team: Russian (http://app.transifex.com/xfce/xfce-panel-plugins/language/ru/)\n"
@@ -18,42 +18,46 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../src/smartbookmark.c:96
+#: src/smartbookmark.c:96
 #, c-format
 msgid "Failed to send %s to your preferred browser"
 msgstr "Ошибка при отправке %s вашему предпочитаемому браузеру"
 
-#: ../src/smartbookmark.c:265
+#: src/smartbookmark.c:265 src/smartbookmark.desktop.in:5
 msgid "Query websites from the Xfce panel"
 msgstr "Переход к сайтам с панели Xfce"
 
-#: ../src/smartbookmark.c:291
+#: src/smartbookmark.c:291
 msgid "Smartbookmark"
 msgstr "Умные закладки"
 
-#: ../src/smartbookmark.c:294
+#: src/smartbookmark.c:294
 msgid "_Close"
 msgstr "_Закрыть"
 
-#: ../src/smartbookmark.c:298
+#: src/smartbookmark.c:298
 msgid "Preferences"
 msgstr "Параметры"
 
 #. text label
-#: ../src/smartbookmark.c:310
+#: src/smartbookmark.c:310
 msgid "Label:"
 msgstr "Метка:"
 
-#: ../src/smartbookmark.c:329
+#: src/smartbookmark.c:329
 msgid "Hide label"
 msgstr "Спрятать метку"
 
 #. url label
-#: ../src/smartbookmark.c:338
+#: src/smartbookmark.c:338
 msgid "URL:  "
 msgstr "Ссылка URL:"
 
 #. size label
-#: ../src/smartbookmark.c:353
+#: src/smartbookmark.c:353
 msgid "Size:"
 msgstr "Размер:"
+
+#: src/smartbookmark.desktop.in:4
+msgid "SmartBookmark"
+msgstr "Умные закладки"

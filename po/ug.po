@@ -32,7 +32,7 @@ msgstr "Smartbookmark"
 
 #: src/smartbookmark.c:294
 msgid "_Close"
-msgstr ""
+msgstr "ياپ(_C)"
 
 #: src/smartbookmark.c:298
 msgid "Preferences"

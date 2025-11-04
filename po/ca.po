@@ -29,7 +29,7 @@ msgstr "Ha fallat l'enviament de %s al vostre navegador preferit"
 
 #: src/smartbookmark.c:265 src/smartbookmark.desktop.in:5
 msgid "Query websites from the Xfce panel"
-msgstr "Consulteu llocs web des del tauler de l'Xfce"
+msgstr "Consulteu llocs web des del panell de l'Xfce"
 
 #: src/smartbookmark.c:291
 msgid "Smartbookmark"

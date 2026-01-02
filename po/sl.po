@@ -26,7 +26,7 @@ msgstr "Neuspešno pošiljanje %s v vaš privzet brskalnik"
 
 #: src/smartbookmark.c:265 src/smartbookmark.desktop.in:5
 msgid "Query websites from the Xfce panel"
-msgstr "Preišči spletne strani iz Xfce panoja"
+msgstr "Brskajte po spletnih straneh kar iz Xfce panoja"
 
 #: src/smartbookmark.c:291
 msgid "Smartbookmark"
@@ -52,7 +52,7 @@ msgstr "Skrij oznako"
 #. url label
 #: src/smartbookmark.c:338
 msgid "URL:  "
-msgstr "URL:"
+msgstr "URL:  "
 
 #. size label
 #: src/smartbookmark.c:353

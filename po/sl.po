@@ -43,7 +43,7 @@ msgstr "Lastnosti"
 #. text label
 #: src/smartbookmark.c:310
 msgid "Label:"
-msgstr "Oznake:"
+msgstr "Oznaka:"
 
 #: src/smartbookmark.c:329
 msgid "Hide label"
